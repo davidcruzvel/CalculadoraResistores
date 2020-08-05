@@ -1,0 +1,2 @@
+# CalculadoraResistores
+Calculadora de resistores
