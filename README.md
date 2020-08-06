@@ -1,5 +1,5 @@
 # CalculadoraResistores
 Calculadora de resistores
 
-Este proyecto se encuentra en desarrollo. 
-Se está trabajando en la Fase 1.
+En esta rama se está desarrollando la Fase 1.
+En espera para fusión con la rama "master".
