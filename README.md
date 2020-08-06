@@ -1,6 +1,5 @@
 # CalculadoraResistores
 Calculadora de resistores
 
-Ultima actualzacion de prueba
-Actualización de clonación
-Prueba de push exitosa
+Este proyecto se encuentra en desarrollo.
+Fase 1.
