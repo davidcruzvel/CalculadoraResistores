@@ -1,4 +1,5 @@
 # CalculadoraResistores
 Calculadora de resistores
 
-Ultima actualzacion de prueba
+Este proyecto se encuentra en desarrollo. 
+Se está trabajando en la Fase 1.
