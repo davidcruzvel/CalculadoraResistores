@@ -6,12 +6,18 @@ function calcular3bandas(){
     var multipli = document.f3bandas.mult.value;
     var valorcaja = 0;
     var con = ban1.toString() + ban2.toString();
-    
-    valorcaja = parseFloat(con) * parseFloat(multipli);
 
-    valorcaja = valorcaja + " Ω";
+    //Validacion de 3 bandas
+    if(ban1 == -1 || ban2 == -1 || multipli == -1){
+        alert("*Uno de los campos no ha sido seleccionado*");
+    }
+    else{
+        valorcaja = parseFloat(con) * parseFloat(multipli);
 
-    document.f3bandas.caja.value = valorcaja;
+        valorcaja = valorcaja + " Ω";
+
+        document.f3bandas.caja.value = valorcaja;
+    }
 }
 
 function limpiar3bandas(){    
@@ -31,12 +37,17 @@ function calcular4bandas(){
     var valorcaja = 0;
     var con = ban1.toString() + ban2.toString();
     
-    valorcaja = parseFloat(con) * parseFloat(multipli);
+    //Validacion de 4 bandas
+    if(ban1 == -1 || ban2 == -1 || multipli == -1 || tolerancia == -1){
+        alert("*Uno de los campos no ha sido seleccionado*");
+    }
+    else{
+        valorcaja = parseFloat(con) * parseFloat(multipli);
 
-    valorcaja = valorcaja + " Ω " + tolerancia;
+        valorcaja = valorcaja + " Ω " + tolerancia;
 
-    document.f4bandas.caja.value = valorcaja;
-
+        document.f4bandas.caja.value = valorcaja;
+    }
 }
 
 function limpiar4bandas(){    
