@@ -25,9 +25,10 @@
             </div>
         </nav>
         <main>
+
+            <!-- RESISTOR DE 3 BANDAS -->
             <div id="Lo">
-                <div id="iz">Seleccione los colores de las Bandas: <br><br>                    
-                    <!-- RESISTOR DE 3 BANDAS -->                    
+                <div id="iz">Seleccione los colores de las Bandas: <br><br>
                     <form name="f3bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
                             <select name="b1" class="selex">
@@ -97,8 +98,7 @@
 
             <!-- RESITOR DE 4 BANDAS-->
             <div id="Pa" onclick="Paris">
-                <div id="iz">Seleccione los colores de las Bandas: <br><br>
-                    <!-- RESISTOR DE 3 BANDAS -->                    
+                <div id="iz">Seleccione los colores de las Bandas: <br><br>                                       
                     <form name="f4bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
                             <select name="b1" class="selex">
@@ -182,102 +182,111 @@
             <!-- RESITOR DE 5 BANDAS-->
             <div id="To" onclick="Tokyo">
                 <div id="iz">Seleccione los colores de las Bandas: <br><br>
-                    <div class="select"> Primera Banda <br>
-                        <select name="select" class="selex">
-                            <option value="value10" selected class="sele">Seleccione un color</option>
-                            <option value="value0" class="negro">Negro (0)</option>
-                            <option value="value1" class="marron">Marrón (1)</option>
-                            <option value="value2" class="rojo">Rojo (2)</option>
-                            <option value="value3" class="naranja">Naranja (3)</option>
-                            <option value="value4" class="anarillo">Amarillo (4)</option>
-                            <option value="value5" class="verde">Verde (5)</option>
-                            <option value="value6" class="azul">Azul (6)</option>
-                            <option value="value7" class="violeta">Violeta (7)</option>
-                            <option value="value8" class="gris">Gris (8)</option>
-                            <option value="value9" class="blanco">Blanco (9)</option>
-                        </select>
-                    </div>
-                    <div class="select"> Segunda Banda <br>
-                        <select name="select" class="selex">
-                            <option value="value10" selected class="sele">Seleccione un color</option>
-                            <option value="value0" class="negro">Negro (0)</option>
-                            <option value="value1" class="marron">Marrón (1)</option>
-                            <option value="value2" class="rojo">Rojo (2)</option>
-                            <option value="value3" class="naranja">Naranja (3)</option>
-                            <option value="value4" class="anarillo">Amarillo (4)</option>
-                            <option value="value5" class="verde">Verde (5)</option>
-                            <option value="value6" class="azul">Azul (6)</option>
-                            <option value="value7" class="violeta">Violeta (7)</option>
-                            <option value="value8" class="gris">Gris (8)</option>
-                            <option value="value9" class="blanco">Blanco (9)</option>
-                        </select>
-                    </div>
-                    <div class="select"> Tercera Banda <br>
-                        <select name="select" class="selex">
-                            <option value="value10" selected class="sele">Seleccione un color</option>
-                            <option value="value0" class="negro">Negro (0)</option>
-                            <option value="value1" class="marron">Marrón (1)</option>
-                            <option value="value2" class="rojo">Rojo (2)</option>
-                            <option value="value3" class="naranja">Naranja (3)</option>
-                            <option value="value4" class="anarillo">Amarillo (4)</option>
-                            <option value="value5" class="verde">Verde (5)</option>
-                            <option value="value6" class="azul">Azul (6)</option>
-                            <option value="value7" class="violeta">Violeta (7)</option>
-                            <option value="value8" class="gris">Gris (8)</option>
-                            <option value="value9" class="blanco">Blanco (9)</option>
-                        </select>
-                    </div>
-                    <div class="select">Multiplicador(*) <br>
-                        <select name="select" class="selex">
-                            <option value="value10" selected class="sele">Seleccione un color</option>
-                            <option value="value0" class="negro">Negro (x1 Ω)</option>
-                            <option value="value1" class="marron">Marrón (x10 Ω)</option>
-                            <option value="value2" class="rojo">Rojo (x100 Ω)</option>
-                            <option value="value3" class="naranja">Naranja (x1 kΩ)</option>
-                            <option value="value4" class="anarillo">Amarillo (x10 kΩ)</option>
-                            <option value="value5" class="verde">Verde (x100 kΩ)</option>
-                            <option value="value6" class="azul">Azul (x1 MΩ)</option>
-                            <option value="value7" class="violeta">Violeta (x10 MΩ)</option>
-                            <option value="value8" class="gris">Gris (x100 MΩ)</option>
-                            <option value="value9" class="blanco">Blanco (x1 GΩ)</option>
-                            <option value="value11" class="dorado">Dorado (x0.1 Ω)</option>
-                            <option value="value12" class="plata">Plata (x0.01 Ω)</option>
-                        </select>
-                    </div>
-                    <div class="select"> Tolerancia <br>
-                        <select name="select" class="selex">
-                            <option value="value10" selected class="sele">Seleccione un color</option>
-                            <option value="value0" class="marron">Marron   ± 1%</option>
-                            <option value="value1" class="rojo">Rojo   ± 2%</option>
-                            <option value="value2" class="verde">Verde   ± 0.5%</option>
-                            <option value="value3" class="azul">Azul   ± 0.25%</option>
-                            <option value="value4" class="violeta">Violeta   ± 0.1%</option>
-                            <option value="value5" class="gris">Gris   ± 0.05%</option>
-                            <option value="value6" class="dorado">Dorado   ± 5% </option>
-                            <option value="value7" class="plata">Plata   ± 10%</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="de">&nbsp;&nbsp;&nbsp;&nbsp;Valor del Resistor: 
-                    <form action="" method="GET">
-                    <div class="box">  
-                        <input type="text" name="nombre" class="valor"/>
-                    </div>
-                    <div class="box1">
-                        <img src="../img/res.jpg" width="70%">
-                    </div>
-                    <div class="box2">
-                        <input type="submit" value="CALCULAR" class="submit0"/>
-                        <input type="submit" value="LIMPIAR" class="submit1"/>
-                    </div>
-                </form>
+                    <form name="f5bandas" action="../html/index.html" method="POST">
+                        <div class="select"> Primera Banda <br>
+                            <select name="b1" class="selex">
+                                <option value="-1" selected class="sele">Seleccione un color</option>
+                                <option value="0" class="negro">Negro (0)</option>
+                                <option value="1" class="marron">Marrón (1)</option>
+                                <option value="2" class="rojo">Rojo (2)</option>
+                                <option value="3" class="naranja">Naranja (3)</option>
+                                <option value="4" class="anarillo">Amarillo (4)</option>
+                                <option value="5" class="verde">Verde (5)</option>
+                                <option value="6" class="azul">Azul (6)</option>
+                                <option value="7" class="violeta">Violeta (7)</option>
+                                <option value="8" class="gris">Gris (8)</option>
+                                <option value="9" class="blanco">Blanco (9)</option>
+                            </select>
+                        </div>
+                        <div class="select"> Segunda Banda <br>
+                            <select name="b2" class="selex">
+                                <option value="-1" selected class="sele">Seleccione un color</option>
+                                <option value="0" class="negro">Negro (0)</option>
+                                <option value="1" class="marron">Marrón (1)</option>
+                                <option value="2" class="rojo">Rojo (2)</option>
+                                <option value="3" class="naranja">Naranja (3)</option>
+                                <option value="4" class="anarillo">Amarillo (4)</option>
+                                <option value="5" class="verde">Verde (5)</option>
+                                <option value="6" class="azul">Azul (6)</option>
+                                <option value="7" class="violeta">Violeta (7)</option>
+                                <option value="8" class="gris">Gris (8)</option>
+                                <option value="9" class="blanco">Blanco (9)</option>
+                            </select>
+                        </div>
+                        <div class="select"> Tercera Banda <br>
+                            <select name="b3" class="selex">
+                                <option value="-1" selected class="sele">Seleccione un color</option>
+                                <option value="0" class="negro">Negro (0)</option>
+                                <option value="1" class="marron">Marrón (1)</option>
+                                <option value="2" class="rojo">Rojo (2)</option>
+                                <option value="3" class="naranja">Naranja (3)</option>
+                                <option value="4" class="anarillo">Amarillo (4)</option>
+                                <option value="5" class="verde">Verde (5)</option>
+                                <option value="6" class="azul">Azul (6)</option>
+                                <option value="7" class="violeta">Violeta (7)</option>
+                                <option value="8" class="gris">Gris (8)</option>
+                                <option value="9" class="blanco">Blanco (9)</option>
+                            </select>
+                        </div>
+                        <div class="select">Multiplicador(*) <br>
+                            <select name="mult" class="selex">
+                                <option value="-1" selected class="sele">Seleccione un color</option>
+                                <option value="1" class="negro">Negro (x1 Ω)</option>
+                                <option value="10" class="marron">Marrón (x10 Ω)</option>
+                                <option value="100" class="rojo">Rojo (x100 Ω)</option>
+                                <option value="1000" class="naranja">Naranja (x1 kΩ)</option>
+                                <option value="10000" class="anarillo">Amarillo (x10 kΩ)</option>
+                                <option value="100000" class="verde">Verde (x100 kΩ)</option>
+                                <option value="1000000" class="azul">Azul (x1 MΩ)</option>
+                                <option value="10000000" class="violeta">Violeta (x10 MΩ)</option>
+                                <option value="100000000" class="gris">Gris (x100 MΩ)</option>
+                                <option value="1000000000" class="blanco">Blanco (x1 GΩ)</option>
+                                <option value="0.1" class="dorado">Dorado (x0.1 Ω)</option>
+                                <option value="0.01" class="plata">Plata (x0.01 Ω)</option>
+                            </select>
+                        </div>
+                        <div class="select"> Tolerancia <br>
+                            <select name="tol" class="selex">
+                                <option value="-1" selected class="sele">Seleccione un color</option>
+                                <option value="± 1%" class="marron">Marron   ± 1%</option>
+                                <option value="± 2%" class="rojo">Rojo   ± 2%</option>
+                                <option value="± 0.5%" class="verde">Verde   ± 0.5%</option>
+                                <option value="± 0.25%" class="azul">Azul   ± 0.25%</option>
+                                <option value="± 0.1%" class="violeta">Violeta   ± 0.1%</option>
+                                <option value="± 0.05%" class="gris">Gris   ± 0.05%</option>
+                                <option value="± 5%" class="dorado">Dorado   ± 5% </option>
+                                <option value="± 10%" class="plata">Plata   ± 10%</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div id="de">&nbsp;&nbsp;&nbsp;&nbsp;Valor del Resistor:                     
+                        <div class="box">
+                            <!--VALOR DEL RESISTOR-->
+                            <input type="text" id="caja" name="caja" value="" class="valor"/>
+                        </div>
+                        <div class="box1">
+                            <!-- IMAGEN DE RESISTOR-->
+                            <img src="../img/res.jpg" width="70%">
+                        </div>
+                        <div class="box2">
+                            <!-- BOTONES CALCULAR Y LIMPIAR -->
+                            <input type="button" value="CALCULAR" onclick="calcular5bandas()" class="submit0"/>
+                            <input type="button" value="LIMPIAR" onclick="limpiar5bandas()" class="submit1"/>
+                        </div>
+                    </form>            
                 </div>
             </div>
+
+
+            <!-- CALCULAR VALOR A COLORES -->
+
             <div id="Ro" onclick="Roma">
                 <h3>Introducir valor</h3>
                 <p>Esta función se encuentra en desarrollo. Fase 2.</p>
             </div>
         </main>
+
+
         <!-- Inicia -> CODIGO JS DE PESTAÑAS -->
         <script type="text/javascript">
             London();
