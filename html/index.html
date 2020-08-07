@@ -26,8 +26,7 @@
         </nav>
         <main>
             <div id="Lo">
-                <div id="iz">Seleccione los colores de las Bandas: <br><br>
-                    
+                <div id="iz">Seleccione los colores de las Bandas: <br><br>                    
                     <!-- RESISTOR DE 3 BANDAS -->                    
                     <form name="f3bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
@@ -76,25 +75,23 @@
                                 <option value="0.1" class="dorado">Dorado (x0.1 Ω)</option>
                                 <option value="0.01" class="plata">Plata (x0.01 Ω)</option>
                             </select>
+                        </div>                  
                         </div>
-                    </form>
-                </div>
-                <div id="de">&nbsp;&nbsp;&nbsp;&nbsp;Valor del Resistor: 
-                    <form action="../html/index.html" method="GET">
-                    <div class="box">
-                        <!--VALOR DEL RESISTOR-->
-                        <input type="text" id="caja" name="caja" class="valor"/>
-                    </div>
-                    <div class="box1">
-                        <!-- IMAGEN DE RESISTOR-->
-                        <img src="../img/res.jpg" width="70%">
-                    </div>
-                    <div class="box2">
-                        <!-- BOTONES CALCULAR Y LIMPIAR -->
-                        <input type="button" value="calcular" onclick="calcular3bandas();" class="submit0"/>
-                        <input type="submit" value="LIMPIAR" class="submit1"/>
-                    </div>
-                </form>
+                        <div id="de">&nbsp;&nbsp;&nbsp;&nbsp;Valor del Resistor:                     
+                        <div class="box">
+                            <!--VALOR DEL RESISTOR-->
+                            <input type="text" id="caja" name="caja" value="" class="valor"/>
+                        </div>
+                        <div class="box1">
+                            <!-- IMAGEN DE RESISTOR-->
+                            <img src="../img/res.jpg" width="70%">
+                        </div>
+                        <div class="box2">
+                            <!-- BOTONES CALCULAR Y LIMPIAR -->
+                            <input type="button" value="CALCULAR" onclick="calcular3bandas()" class="submit0"/>
+                            <input type="button" value="LIMPIAR" onclick="limpiar()" class="submit1"/>
+                        </div>
+                     </form>
                 </div>
             </div>
 
