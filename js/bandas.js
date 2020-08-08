@@ -516,7 +516,7 @@ function cambiarColor4b(){
             }
         }break;
 
-        case "± 0.25":{
+        case "± 0.25%":{
             for (var i=0; i<tolclass.length; i++) {
                 tolclass[i].style.backgroundColor="#0002fb"; //azul
             }
@@ -528,7 +528,7 @@ function cambiarColor4b(){
             }
         }break;
 
-        case "± 0.05":{
+        case "± 0.05%":{
             for (var i=0; i<tolclass.length; i++) {
                 tolclass[i].style.backgroundColor="#4d4b4c"; //gris
             }
@@ -898,7 +898,7 @@ function cambiarColor5b(){
             }
         }break;
 
-        case "± 0.25":{
+        case "± 0.25%":{
             for (var i=0; i<tolclass.length; i++) {
                 tolclass[i].style.backgroundColor="#0002fb"; //azul
             }
@@ -910,7 +910,7 @@ function cambiarColor5b(){
             }
         }break;
 
-        case "± 0.05":{
+        case "± 0.05%":{
             for (var i=0; i<tolclass.length; i++) {
                 tolclass[i].style.backgroundColor="#4d4b4c"; //gris
             }
