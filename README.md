@@ -1,4 +1,6 @@
 # CalculadoraResistores
-- Resumen de cambios:
+Calculadora de resistores
 
-* La Fase 1 se encuentra casi terminada.
+Pendientes:
+  -Identación
+  -Agregar tablas de códigos de colores al index.html

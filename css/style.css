@@ -108,8 +108,18 @@ header{
     height: 32px;
     font-size: 17px;
 }
-
-
+.selex2{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+.selex1{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
 .negro{
     background-color: black;
     color: white;

@@ -8,9 +8,14 @@ function cambiarColor3b(){
     var multipli = document.f3bandas.mult.value;
 
     //Peticion de la clase 
+    var ban11class=document.getElementsByClassName("selex");
     var ban1class=document.getElementsByClassName("a2");
+    var ban00class=document.getElementsByClassName("selex1");
     var ban2class=document.getElementsByClassName("a5");
-    var multipliclass=document.getElementsByClassName("a7");    
+    var ban22class=document.getElementsByClassName("selex2");
+    var multipliclass=document.getElementsByClassName("a7");  
+    
+
 
     //Cambiando colores a banda 1    
     switch(ban1){
@@ -24,60 +29,73 @@ function cambiarColor3b(){
         case "0":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="black"; //negro
+                ban11class[i].style.backgroundColor="black"; //negro
+                ban11class[i].style.color="white"; //negro
             }
         }break;
 
         case "1":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#5d2d2d"; //marron
+                ban11class[i].style.backgroundColor="#5d2d2d"; //marron
             }
         }break;
 
         case "2":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#fe0000"; //rojo
+                ban11class[i].style.backgroundColor="#fe0000"; //rojo
             }
         }break;
 
         case "3":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#fc7c00"; //naranja
+                ban11class[i].style.backgroundColor="#fc7c00"; //naranja
             }
         }break;
 
         case "4":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#ffff01"; //amarillo
+                ban11class[i].style.backgroundColor="#ffff01"; //amarillo
+                ban11class[i].style.color="black"; //amarillo
             }
         }break;
 
         case "5":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#008000"; //verde
+                ban11class[i].style.backgroundColor="#008000"; //verde
             }
         }break;
 
         case "6":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#0002fb"; //azul
+                ban11class[i].style.backgroundColor="#0002fb"; //azul
             }
         }break;
 
         case "7":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#81007f"; //violeta
+                ban11class[i].style.backgroundColor="#81007f"; //violeta
             }
         }break;
 
         case "8":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban11class[i].style.backgroundColor="#4d4b4c"; //gris
             }
         }break;
 
         case "9":{
             for (var i=0; i<ban1class.length; i++) {
                 ban1class[i].style.backgroundColor="white"; //blanco
+                ban11class[i].style.backgroundColor="white"; //gris
+                ban11class[i].style.color="black"; //gris
             }
         }break;
 
@@ -91,66 +109,92 @@ function cambiarColor3b(){
         case "-1":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#e1c699"; //beige
+
             }
         }break;
 
         case "0":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="black"; //negro
+                ban00class[i].style.backgroundColor="black"; //negro
+                ban00class[i].style.color="white"; //negro
+
             }
         }break;
 
         case "1":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#5d2d2d"; //marron
+                ban00class[i].style.backgroundColor="#5d2d2d"; //marron
+
+                
             }
         }break;
 
         case "2":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#fe0000"; //rojo
+                ban00class[i].style.backgroundColor="#fe0000"; //rojo
+
             }
         }break;
 
         case "3":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#fc7c00"; //naranja
+                ban00class[i].style.backgroundColor="#fc7c00"; //naranja
+
             }
         }break;
 
         case "4":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#ffff01"; //amarillo
+                ban00class[i].style.backgroundColor="#ffff01"; //amarillo
+                ban00class[i].style.color="black"; //amarillo
+  
+                
             }
         }break;
 
         case "5":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#008000"; //verde
+                ban00class[i].style.backgroundColor="#008000"; //verde
+
             }
         }break;
 
         case "6":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#0002fb"; //azul
+                ban00class[i].style.backgroundColor="#0002fb"; //azul
+
             }
         }break;
 
         case "7":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="#81007f"; //violeta
+                ban00class[i].style.backgroundColor="#81007f"; //violeta
+
             }
         }break;
 
         case "8":{
             for (var i=0; i<ban2class.length; i++) {
-                ban2class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban2class[i].style.backgroundColor="#4d4b4c"; //gris'
+                ban00class[i].style.backgroundColor="#4d4b4c"; //gris'
+
             }
         }break;
 
         case "9":{
             for (var i=0; i<ban2class.length; i++) {
                 ban2class[i].style.backgroundColor="white"; //blanco
+                ban00class[i].style.backgroundColor="white"; //blanco
+                ban00class[i].style.color="black"; //blanco
+
             }
         }break;
 
@@ -170,72 +214,87 @@ function cambiarColor3b(){
         case "1":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="black"; //negro
+                ban22class[i].style.backgroundColor="black"; //negro
+                ban22class[i].style.color="white"; //negro
             }
         }break;
 
         case "10":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#5d2d2d"; //marron
+                ban22class[i].style.backgroundColor="#5d2d2d"; //marron
             }
         }break;
 
         case "100":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#fe0000"; //rojo
+                ban22class[i].style.backgroundColor="#fe0000"; //rojo
             }
         }break;
 
         case "1000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#fc7c00"; //naranja
+                ban22class[i].style.backgroundColor="#fc7c00"; //naranja
             }
         }break;
 
         case "10000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#ffff01"; //amarillo
+                ban22class[i].style.backgroundColor="#ffff01"; //amarillo
+                ban22class[i].style.color="black"; //amarillo
             }
         }break;
 
         case "100000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#008000"; //verde
+                ban22class[i].style.backgroundColor="#008000"; //verde
             }
         }break;
 
         case "1000000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#0002fb"; //azul
+                ban22class[i].style.backgroundColor="#0002fb"; //azul
             }
         }break;
 
         case "10000000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#81007f"; //violeta
+                ba22class[i].style.backgroundColor="#81007f"; //violeta
             }
         }break;
 
         case "100000000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#4d4b4c"; //gris
+                ban22class[i].style.backgroundColor="#4d4b4c"; //gris
             }
         }break;
 
         case "1000000000":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="white"; //blanco
+                ban22class[i].style.backgroundColor="white"; //blanco
+                ban22class[i].style.color="black"; //blanco
             }
         }break;
 
         case "0.1":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#daa521"; //dorado
+                ban22class[i].style.backgroundColor="#daa521"; //dorado
             }
         }break;
 
         case "0.01":{
             for (var i=0; i<multipliclass.length; i++) {
                 multipliclass[i].style.backgroundColor="#c0c0be"; //plata
+                ban22class[i].style.backgroundColor="#c0c0be"; //plata
             }
         }break;
 

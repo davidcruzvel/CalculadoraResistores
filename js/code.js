@@ -33,6 +33,9 @@ function limpiar3bandas(){
     var ban1class=document.getElementsByClassName("a2");
     var ban2class=document.getElementsByClassName("a5");
     var multipliclass=document.getElementsByClassName("a7");   
+    var multi22pliclass=document.getElementsByClassName("selex2"); 
+    var multi222pliclass=document.getElementsByClassName("selex1");
+    var multi2222pliclass=document.getElementsByClassName("selex");
 
     for (var i=0; i<ban1class.length; i++) {
         ban1class[i].style.backgroundColor="#e1c699"; //beige
@@ -44,6 +47,18 @@ function limpiar3bandas(){
 
     for (var i=0; i<multipliclass.length; i++) {
         multipliclass[i].style.backgroundColor="#e1c699"; //beige
+    }
+    for (var i=0; i<multi22pliclass.length; i++) {
+        multi22pliclass[i].style.backgroundColor="white"; //beige
+        multi22pliclass[i].style.color="black"; //beige
+    }
+    for (var i=0; i<multi222pliclass.length; i++) {
+        multi222pliclass[i].style.backgroundColor="white"; //beige
+        multi222pliclass[i].style.color="black"; //beige
+    }
+    for (var i=0; i<multi22pliclass.length; i++) {
+        multi2222pliclass[i].style.backgroundColor="white"; //beige
+        multi2222pliclass[i].style.color="black"; //beige
     }
 }
 
