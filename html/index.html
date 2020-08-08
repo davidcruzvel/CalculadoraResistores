@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    </link>
+    <link rel="stylesheet" type="text/css" href="../css/bandas.css">
     <script type="text/javascript" src="../js/code.js"></script>
+    <script type="text/javascript" src="../js/bandas.js"></script>
     <title>Calculadora resistores</title>
 </head>
 
@@ -31,7 +32,7 @@
                 <div id="iz">Seleccione los colores de las Bandas: <br><br>
                     <form name="f3bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
-                            <select name="b1" class="selex">
+                            <select name="b1" class="selex" onchange="cambiarColor3b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -46,7 +47,7 @@
                             </select>
                         </div><br><br>
                         <div class="select"> Segunda Banda <br>
-                            <select name="b2" class="selex">
+                            <select name="b2" class="selex" onchange="cambiarColor3b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -61,7 +62,7 @@
                             </select>
                         </div><br><br>
                         <div class="select">Multiplicador(*) <br>
-                            <select name="mult" class="selex">
+                            <select name="mult" class="selex" onchange="cambiarColor3b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="1" class="negro">Negro (x1 Ω)</option>
                                 <option value="10" class="marron">Marrón (x10 Ω)</option>
@@ -85,7 +86,21 @@
                         </div>
                         <div class="box1">
                             <!-- IMAGEN DE RESISTOR-->
-                            <img src="../img/res.jpg" width="70%">
+                            <div class="ai" ></div>
+                            <div class="a1" ></div>
+                            <div class="a2" id="body"></div>
+                            <div class="a3"></div>
+                            <div class="a4"></div>
+                            <div class="a5" id="body1"></div>
+                            <div class="a6"></div>
+                            <div class="a7" id="body2"></div>
+                            <div class="a8"></div>
+                            <div class="a9" id="body3"></div>
+                            <div class="a10"></div>
+                            <div class="a11"></div>
+                            <div class="a12" id="body4"></div>
+                            <div class="a13"></div>
+                            <div class="ad"></div>
                         </div>
                         <div class="box2">
                             <!-- BOTONES CALCULAR Y LIMPIAR -->
@@ -101,7 +116,7 @@
                 <div id="iz">Seleccione los colores de las Bandas: <br><br>                                       
                     <form name="f4bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
-                            <select name="b1" class="selex">
+                            <select name="b1" class="selex" onchange="cambiarColor4b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -116,7 +131,7 @@
                             </select>
                         </div><br>
                         <div class="select"> Segunda Banda <br>
-                            <select name="b2" class="selex">
+                            <select name="b2" class="selex" onchange="cambiarColor4b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -131,7 +146,7 @@
                             </select>
                         </div><br>
                         <div class="select">Multiplicador(*) <br>
-                            <select name="mult" class="selex">
+                            <select name="mult" class="selex" onchange="cambiarColor4b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="1" class="negro">Negro (x1 Ω)</option>
                                 <option value="10" class="marron">Marrón (x10 Ω)</option>
@@ -148,7 +163,7 @@
                             </select>
                         </div><br>
                         <div class="select"> Tolerancia <br>                        
-                            <select name="tol" class="selex">
+                            <select name="tol" class="selex" onchange="cambiarColor4b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="± 1%" class="marron">Marron   ± 1%</option>
                                 <option value="± 2%" class="rojo">Rojo   ± 2%</option>
@@ -168,7 +183,21 @@
                         </div>
                         <div class="box1">
                             <!-- IMAGEN DE RESISTOR-->
-                            <img src="../img/res.jpg" width="70%">
+                            <div class="ai" ></div>
+                            <div class="a1" ></div>
+                            <div class="a2" id="body"></div>
+                            <div class="a3"></div>
+                            <div class="a4"></div>
+                            <div class="a5" id="body1"></div>
+                            <div class="a6"></div>
+                            <div class="a7" id="body2"></div>
+                            <div class="a8"></div>
+                            <div class="a9" id="body3"></div>
+                            <div class="a10"></div>
+                            <div class="a11"></div>
+                            <div class="a12" id="body4"></div>
+                            <div class="a13"></div>
+                            <div class="ad"></div>
                         </div>
                         <div class="box2">
                             <!-- BOTONES CALCULAR Y LIMPIAR -->
@@ -184,7 +213,7 @@
                 <div id="iz">Seleccione los colores de las Bandas: <br><br>
                     <form name="f5bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
-                            <select name="b1" class="selex">
+                            <select name="b1" class="selex"  onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -199,7 +228,7 @@
                             </select>
                         </div>
                         <div class="select"> Segunda Banda <br>
-                            <select name="b2" class="selex">
+                            <select name="b2" class="selex" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -214,7 +243,7 @@
                             </select>
                         </div>
                         <div class="select"> Tercera Banda <br>
-                            <select name="b3" class="selex">
+                            <select name="b3" class="selex" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -229,7 +258,7 @@
                             </select>
                         </div>
                         <div class="select">Multiplicador(*) <br>
-                            <select name="mult" class="selex">
+                            <select name="mult" class="selex" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="1" class="negro">Negro (x1 Ω)</option>
                                 <option value="10" class="marron">Marrón (x10 Ω)</option>
@@ -246,7 +275,7 @@
                             </select>
                         </div>
                         <div class="select"> Tolerancia <br>
-                            <select name="tol" class="selex">
+                            <select name="tol" class="selex" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="± 1%" class="marron">Marron   ± 1%</option>
                                 <option value="± 2%" class="rojo">Rojo   ± 2%</option>
@@ -266,7 +295,21 @@
                         </div>
                         <div class="box1">
                             <!-- IMAGEN DE RESISTOR-->
-                            <img src="../img/res.jpg" width="70%">
+                            <div class="ai" ></div>
+                            <div class="a1" ></div>
+                            <div class="a2" id="body"></div>
+                            <div class="a3"></div>
+                            <div class="a4"></div>
+                            <div class="a5" id="body1"></div>
+                            <div class="a6"></div>
+                            <div class="a7" id="body2"></div>
+                            <div class="a8"></div>
+                            <div class="a9" id="body3"></div>
+                            <div class="a10"></div>
+                            <div class="a11"></div>
+                            <div class="a12" id="body4"></div>
+                            <div class="a13"></div>
+                            <div class="ad"></div>
                         </div>
                         <div class="box2">
                             <!-- BOTONES CALCULAR Y LIMPIAR -->
@@ -334,5 +377,4 @@
         <!-- Finaliza -> CODIGO JS DE PESTAÑAS -->
     </div>
 </body>
-
 </html>

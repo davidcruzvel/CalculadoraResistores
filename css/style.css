@@ -97,14 +97,14 @@ header{
     line-height: 1.8;
     font-size: 16px;
     display: inline-block;
-    width: 360px;
+    width: 330px;
     height: 67px;
     background-color: #D6D3D3;
     border: 1px solid #D6D3D3;
 }
 .selex{
     border-radius: 8px;
-    width: 350px;
+    width: 320px;
     height: 32px;
     font-size: 17px;
 }
@@ -168,7 +168,7 @@ header{
     line-height: 1.8;
     font-size: 16px;
     display: inline-block;
-    width: 360px;
+    width: 380px;
     background-color: rgb(248, 212, 218);
     
 }
@@ -180,6 +180,8 @@ header{
 .box1{
     height: 150px;
     margin-top: 10px;
+    margin-left: 0;
+    /* background-color: silver; */
 }
 .box2{
     height: 80px;
