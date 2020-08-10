@@ -102,13 +102,41 @@ header{
     background-color: #D6D3D3;
     border: 1px solid #D6D3D3;
 }
-.selex{
+
+.selexb1{
     border-radius: 8px;
     width: 320px;
     height: 32px;
     font-size: 17px;
 }
 
+.selexb2{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selexb3{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selexmult{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selextol{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
 
 .negro{
     background-color: black;
