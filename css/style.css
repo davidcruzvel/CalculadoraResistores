@@ -4,7 +4,7 @@ body{
     background-color: rgb(226, 135, 135);
     margin-top: 10px;
     padding-top: 0%;
-    background-image: url(../img/f3.jpg);
+    background-image: url(../img/wall.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -56,16 +56,17 @@ main div{
 }
 header{
     font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Open Sans";
+    font-weight: bolder;
     line-height: 70px;
     padding: 0px;
     margin: 0px;
-    background-color: white;
+    background-color:  rgb(167, 5, 5);;
     color: rgb(167, 5, 5);
-    color: red;
+    color:  white;
     text-align: center;
     text-transform: uppercase;
-    opacity: 0.65;
+    /* opacity: 0.65; */
     width: 70%;
 }
 #iz{
@@ -102,24 +103,42 @@ header{
     background-color: #D6D3D3;
     border: 1px solid #D6D3D3;
 }
-.selex{
+
+.selexb1{
     border-radius: 8px;
     width: 320px;
     height: 32px;
     font-size: 17px;
 }
-.selex2{
+
+.selexb2{
     border-radius: 8px;
     width: 320px;
     height: 32px;
     font-size: 17px;
 }
-.selex1{
+
+.selexb3{
     border-radius: 8px;
     width: 320px;
     height: 32px;
     font-size: 17px;
 }
+
+.selexmult{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selextol{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
 .negro{
     background-color: black;
     color: white;
@@ -153,7 +172,7 @@ header{
     color: white;
 }
 .gris{
-    background-color: rgb(77, 76, 76);
+    background-color: rgb(112, 112, 112);
     color: white;
 }
 .blanco{
