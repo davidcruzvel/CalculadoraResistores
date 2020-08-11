@@ -112,10 +112,10 @@ function cambiarColor3b(){
 
         case "8":{
             for (var i=0; i<ban1class.length; i++) {
-                ban1class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban1class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex1.length; i++) {
-                banselex1[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex1[i].style.backgroundColor="#707070"; //gris
                 banselex1[i].style.color="white"; //blanco
             }
         }break;
@@ -229,10 +229,10 @@ function cambiarColor3b(){
 
         case "8":{
             for (var i=0; i<ban2class.length; i++) {
-                ban2class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban2class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex2.length; i++) {
-                banselex2[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex2[i].style.backgroundColor="#707070"; //gris
                 banselex2[i].style.color="white"; //blanco
             }
         }break;
@@ -346,10 +346,10 @@ function cambiarColor3b(){
 
         case "100000000":{
             for (var i=0; i<multipliclass.length; i++) {
-                multipliclass[i].style.backgroundColor="#4d4b4c"; //gris                
+                multipliclass[i].style.backgroundColor="#707070"; //gris                
             }
             for (var i=0; i<banselexmult.length; i++) {
-                banselexmult[i].style.backgroundColor="#4d4b4c"; //gris
+                banselexmult[i].style.backgroundColor="#707070"; //gris
                 banselexmult[i].style.color="white"; //blanco
             }
         }break;
@@ -503,10 +503,10 @@ function cambiarColor4b(){
 
         case "8":{
             for (var i=0; i<ban1class.length; i++) {
-                ban1class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban1class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex1.length; i++) {
-                banselex1[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex1[i].style.backgroundColor="#707070"; //gris
                 banselex1[i].style.color="white"; //blanco
             }
         }break;
@@ -620,10 +620,10 @@ function cambiarColor4b(){
 
         case "8":{
             for (var i=0; i<ban2class.length; i++) {
-                ban2class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban2class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex2.length; i++) {
-                banselex2[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex2[i].style.backgroundColor="#707070"; //gris
                 banselex2[i].style.color="white"; //blanco
             }
         }break;
@@ -737,10 +737,10 @@ function cambiarColor4b(){
 
         case "100000000":{
             for (var i=0; i<multipliclass.length; i++) {
-                multipliclass[i].style.backgroundColor="#4d4b4c"; //gris
+                multipliclass[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselexmult.length; i++) {
-                banselexmult[i].style.backgroundColor="#4d4b4c"; //gris
+                banselexmult[i].style.backgroundColor="#707070"; //gris
                 banselexmult[i].style.color="white"; //blanco
             }
         }break;
@@ -844,10 +844,10 @@ function cambiarColor4b(){
 
         case "± 0.05%":{
             for (var i=0; i<tolclass.length; i++) {
-                tolclass[i].style.backgroundColor="#4d4b4c"; //gris
+                tolclass[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselextol.length; i++) {
-                banselextol[i].style.backgroundColor="#4d4b4c"; //gris
+                banselextol[i].style.backgroundColor="#707070"; //gris
                 banselextol[i].style.color="white"; //blanco
             }
         }break;
@@ -994,10 +994,10 @@ function cambiarColor5b(){
 
         case "8":{
             for (var i=0; i<ban1class.length; i++) {
-                ban1class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban1class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex1.length; i++) {
-                banselex1[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex1[i].style.backgroundColor="#707070"; //gris
                 banselex1[i].style.color="white"; //blanco
             }
         }break;
@@ -1111,10 +1111,10 @@ function cambiarColor5b(){
 
         case "8":{
             for (var i=0; i<ban2class.length; i++) {
-                ban2class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban2class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex2.length; i++) {
-                banselex2[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex2[i].style.backgroundColor="#707070"; //gris
                 banselex2[i].style.color="white"; //blanco
             }
         }break;
@@ -1227,10 +1227,10 @@ function cambiarColor5b(){
 
         case "8":{
             for (var i=0; i<ban3class.length; i++) {
-                ban3class[i].style.backgroundColor="#4d4b4c"; //gris
+                ban3class[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselex3.length; i++) {
-                banselex3[i].style.backgroundColor="#4d4b4c"; //gris
+                banselex3[i].style.backgroundColor="#707070"; //gris
                 banselex3[i].style.color="white"; //blanco
             }
         }break;
@@ -1343,10 +1343,10 @@ function cambiarColor5b(){
 
         case "100000000":{
             for (var i=0; i<multipliclass.length; i++) {
-                multipliclass[i].style.backgroundColor="#4d4b4c"; //gris
+                multipliclass[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselexmult.length; i++) {
-                banselexmult[i].style.backgroundColor="#4d4b4c"; //gris
+                banselexmult[i].style.backgroundColor="#707070"; //gris
                 banselexmult[i].style.color="white"; //blanco
             }
         }break;
@@ -1450,10 +1450,10 @@ function cambiarColor5b(){
 
         case "± 0.05%":{
             for (var i=0; i<tolclass.length; i++) {
-                tolclass[i].style.backgroundColor="#4d4b4c"; //gris
+                tolclass[i].style.backgroundColor="#707070"; //gris
             }
             for (var i=0; i<banselextol.length; i++) {
-                banselextol[i].style.backgroundColor="#4d4b4c"; //gris
+                banselextol[i].style.backgroundColor="#707070"; //gris
                 banselextol[i].style.color="white"; //blanco
             }
         }break;

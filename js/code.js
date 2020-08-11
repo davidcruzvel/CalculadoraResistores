@@ -15,8 +15,10 @@ function calcular3bandas(){
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
 
-        //Rendondeo
-        valorcaja = valorcaja.toFixed(1);
+        if(multipli == 0.1 || multipli == 0.01){
+            //Rendondeo
+            valorcaja = valorcaja.toFixed(1);
+        }
 
         valorcaja = valorcaja + " Ω " + tolerancia;
 
@@ -85,8 +87,10 @@ function calcular4bandas(){
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
 
-        //Rendondeo
-        valorcaja = valorcaja.toFixed(1);
+        if(multipli == 0.1 || multipli == 0.01){
+            //Rendondeo
+            valorcaja = valorcaja.toFixed(1);
+        }
 
         valorcaja = valorcaja + " Ω " + tolerancia;
 
@@ -148,7 +152,6 @@ function limpiar4bandas(){
     }
 }
 
-
 //CALCULO DE RESISTOR DE 5 BANDAS
 
 function calcular5bandas(){    
@@ -167,8 +170,10 @@ function calcular5bandas(){
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
 
-        //Rendondeo
-        valorcaja = valorcaja.toFixed(1);
+        if(multipli == 0.1 || multipli == 0.01){
+            //Rendondeo
+            valorcaja = valorcaja.toFixed(1);
+        }
 
         valorcaja = valorcaja + " Ω " + tolerancia;
 
