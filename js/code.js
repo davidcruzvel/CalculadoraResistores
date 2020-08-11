@@ -15,6 +15,9 @@ function calcular3bandas(){
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
 
+        //Rendondeo
+        valorcaja = valorcaja.toFixed(1);
+
         valorcaja = valorcaja + " Ω " + tolerancia;
 
         document.f3bandas.caja.value = valorcaja;
@@ -45,6 +48,24 @@ function limpiar3bandas(){
     for (var i=0; i<multipliclass.length; i++) {
         multipliclass[i].style.backgroundColor="#e1c699"; //beige
     }
+
+    //limpiar color de bandas
+    var banselex1 = document.getElementsByClassName("selexb1");
+    var banselex2 = document.getElementsByClassName("selexb2");
+    var banselexmult = document.getElementsByClassName("selexmult");
+
+    for (var i=0; i<banselex1.length; i++) {
+        banselex1[i].style.backgroundColor="white"; //blanco
+        banselex1[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex2.length; i++) {
+        banselex2[i].style.backgroundColor="white"; //blanco
+        banselex2[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselexmult.length; i++) {
+        banselexmult[i].style.backgroundColor="white"; //blanco
+        banselexmult[i].style.color="black"; //Negro
+    }
 }
 
 //CALCULO DE RESISTOR DE 4 BANDAS
@@ -63,6 +84,9 @@ function calcular4bandas(){
     }
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
+
+        //Rendondeo
+        valorcaja = valorcaja.toFixed(1);
 
         valorcaja = valorcaja + " Ω " + tolerancia;
 
@@ -100,6 +124,28 @@ function limpiar4bandas(){
         tolclass[i].style.backgroundColor="#e1c699"; //beige
     }
 
+    //limpiar color de bandas
+    var banselex1 = document.getElementsByClassName("selexb1");
+    var banselex2 = document.getElementsByClassName("selexb2");
+    var banselexmult = document.getElementsByClassName("selexmult");
+    var banselextol = document.getElementsByClassName("selextol");
+
+    for (var i=0; i<banselex1.length; i++) {
+        banselex1[i].style.backgroundColor="white"; //blanco
+        banselex1[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex2.length; i++) {
+        banselex2[i].style.backgroundColor="white"; //blanco
+        banselex2[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselexmult.length; i++) {
+        banselexmult[i].style.backgroundColor="white"; //blanco
+        banselexmult[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselextol.length; i++) {
+        banselextol[i].style.backgroundColor="white"; //blanco
+        banselextol[i].style.color="black"; //Negro
+    }
 }
 
 
@@ -120,6 +166,9 @@ function calcular5bandas(){
     }
     else{
         valorcaja = parseFloat(con) * parseFloat(multipli);
+
+        //Rendondeo
+        valorcaja = valorcaja.toFixed(1);
 
         valorcaja = valorcaja + " Ω " + tolerancia;
 
@@ -162,7 +211,37 @@ function limpiar5bandas(){
     for (var i=0; i<tolclass.length; i++) {
         tolclass[i].style.backgroundColor="#e1c699"; //beige
     }
+
+    //limpiar color de bandas
+    var banselex1 = document.getElementsByClassName("selexb1");
+    var banselex2 = document.getElementsByClassName("selexb2");
+    var banselex3 = document.getElementsByClassName("selexb3");
+    var banselexmult = document.getElementsByClassName("selexmult");
+    var banselextol = document.getElementsByClassName("selextol");
+
+    for (var i=0; i<banselex1.length; i++) {
+        banselex1[i].style.backgroundColor="white"; //blanco
+        banselex1[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex2.length; i++) {
+        banselex2[i].style.backgroundColor="white"; //blanco
+        banselex2[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex3.length; i++) {
+        banselex3[i].style.backgroundColor="white"; //blanco
+        banselex3[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselexmult.length; i++) {
+        banselexmult[i].style.backgroundColor="white"; //blanco
+        banselexmult[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselextol.length; i++) {
+        banselextol[i].style.backgroundColor="white"; //blanco
+        banselextol[i].style.color="black"; //Negro
+    }
 }
+
+//LIMPIEZA DE BANDAS AL CAMBIAR VENTANAS
 
 function limpiarVentana(){
     // Limpieza de ventana de 3 bandas (opciones)
@@ -211,5 +290,33 @@ function limpiarVentana(){
 
     for (var i=0; i<tolclass.length; i++) {
         tolclass[i].style.backgroundColor="#e1c699"; //beige
+    }
+
+    //limpiar color de bandas
+    var banselex1 = document.getElementsByClassName("selexb1");
+    var banselex2 = document.getElementsByClassName("selexb2");
+    var banselex3 = document.getElementsByClassName("selexb3");
+    var banselexmult = document.getElementsByClassName("selexmult");
+    var banselextol = document.getElementsByClassName("selextol");
+
+    for (var i=0; i<banselex1.length; i++) {
+        banselex1[i].style.backgroundColor="white"; //blanco
+        banselex1[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex2.length; i++) {
+        banselex2[i].style.backgroundColor="white"; //blanco
+        banselex2[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselex3.length; i++) {
+        banselex3[i].style.backgroundColor="white"; //blanco
+        banselex3[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselexmult.length; i++) {
+        banselexmult[i].style.backgroundColor="white"; //blanco
+        banselexmult[i].style.color="black"; //Negro
+    }
+    for (var i=0; i<banselextol.length; i++) {
+        banselextol[i].style.backgroundColor="white"; //blanco
+        banselextol[i].style.color="black"; //Negro
     }
 }
