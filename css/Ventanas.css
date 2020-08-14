@@ -1,0 +1,226 @@
+h2 {
+    font-size: 1.1em;
+    margin-top: 2em;
+    text-align: center;
+  }
+  
+  .mainx {
+    width: 80%;
+    margin: auto;
+  }
+  /*3 BANDAS*/
+  #modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+  
+  #mostrar-modal {
+    display: none;
+  }
+  #mostrar-modal + label {
+    background-color: rgb(59, 58, 58);
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 35px;
+    padding: 0 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: "Open Sans";
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #mostrar-modal + label:hover {
+    background-color: rgb(138, 137, 137);
+  }
+  #mostrar-modal:checked ~ #modal {
+    top: 0;
+  }
+  #mostrar-modal:checked ~ #cerrar-modal + label {
+    display: block;
+  }
+  
+  #cerrar-modal {
+    display: none;
+  }
+  #cerrar-modal + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(226, 46, 46);
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    transition: all .5s;
+    font-family: "Open Sans";
+    font-size: 25px;
+  }
+  #cerrar-modal:checked ~ #modal {
+    top: -100vh;
+  }
+  #cerrar-modal:checked + label {
+    display: none;
+  }
+  /* 4 BANDAS*/
+  #ventana {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+  
+  #mostrar-ventana {
+    display: none;
+  }
+  #mostrar-ventana + label {
+    background-color: rgb(59, 58, 58);
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 35px;
+    padding: 0 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: "Open Sans";
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #mostrar-ventana + label:hover {
+    background-color: rgb(138, 137, 137);
+  }
+  #mostrar-ventana:checked ~ #ventana {
+    top: 0;
+  }
+  #mostrar-ventana:checked ~ #cerrar-ventana + label {
+    display: block;
+  }
+  
+  #cerrar-ventana {
+    display: none;
+  }
+  #cerrar-ventana + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(226, 46, 46);
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    transition: all .5s;
+    font-family: "Open Sans";
+    font-size: 25px;
+  }
+  #cerrar-ventana:checked ~ #ventana {
+    top: -100vh;
+  }
+  #cerrar-ventana:checked + label {
+    display: none;
+  }
+  /*5 BANDAS*/
+  #tabla {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+  
+  #mostrar-tabla {
+    display: none;
+  }
+  #mostrar-tabla + label {
+    background-color: rgb(59, 58, 58);
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 35px;
+    padding: 0 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: "Open Sans";
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #mostrar-tabla + label:hover {
+    background-color: rgb(138, 137, 137);
+  }
+  #mostrar-tabla:checked ~ #tabla {
+    top: 0;
+  }
+  #mostrar-tabla:checked ~ #cerrar-tabla + label {
+    display: block;
+  }
+  
+  #cerrar-tabla {
+    display: none;
+  }
+  #cerrar-tabla + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(226, 46, 46);
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    transition: all .5s;
+    font-family: "Open Sans";
+    font-size: 25px;
+  }
+  #cerrar-tabla:checked ~ #tabla {
+    top: -100vh;
+  }
+  #cerrar-tabla:checked + label {
+    display: none;
+  }
+  /*GENERAL*/
+  .ta{
+      margin: 100px;
+      margin-top: 0;
+      margin-left: 5%;
+      position: relative;
+  }
+  h5{
+      margin-top: 20px;
+      padding-top: 0;
+      text-align: center;
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: lighter;
+  }
