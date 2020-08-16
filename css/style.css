@@ -91,6 +91,8 @@ header{
     padding-left: 0%;
     text-align: center;
 }
+
+/* Diseño de los select */
 .select{
     padding-top: 0px;
     margin-top: 0px;
@@ -140,6 +142,7 @@ header{
     font-size: 17px;
 }
 
+/* Clases de colores */
 .negro{
     background-color: black;
     color: white;
@@ -232,6 +235,8 @@ header{
     margin-top: 0;
     text-align: center;
 }
+
+/* Caja y botones */
 .valor{
     height: 28px;
     width: 220px;
@@ -280,17 +285,8 @@ header{
 .submit1:hover{
     background-color: rgb(75, 73, 73);
 }
-.uni{
-    padding-left: 0px;
-    margin-left: 7px;
-    height: 33px;
-    padding-top: 0px;
-    margin-top: 0;
-    font-size: 17px;
-    width: 130px;
-    border-radius: 8px;
-    border: 2px solid red;
-}
+
+/* Diseño del nombre */
 .nomb{
     margin-top: 2px;
     height: 18px;
