@@ -1,3 +1,5 @@
+/* PARAMETROS DE DISEÑO DE LA PAGINA PRINCIPAL */
+
 body{
     padding: 0px;
     margin: 0px;
@@ -66,7 +68,6 @@ header{
     color:  white;
     text-align: center;
     text-transform: uppercase;
-    /* opacity: 0.65; */
     width: 70%;
 }
 #iz{
@@ -88,6 +89,7 @@ header{
     background-color: rgb(248, 212, 218);
     float: left;
     padding-left: 0%;
+    text-align: center;
 }
 .select{
     padding-top: 0px;
@@ -206,7 +208,7 @@ header{
     height: 40px;
     margin-left: 0;
     padding-left: 0;
-    margin-left: 25px;
+    margin-left: 0px;
     width: 400px;
     text-align: center;
 }
@@ -214,13 +216,12 @@ header{
     height: 150px;
     margin-top: 10px;
     margin-left: 0;
-    margin-left: 25px;
+    margin-left: 0px;
     text-align: center;
-    /* background-color: silver; */
 }
 .box2{
     height: 50px;
-    margin-left: 25px;
+    margin-left: 0px;
     text-align: center;
 }
 .boxx{

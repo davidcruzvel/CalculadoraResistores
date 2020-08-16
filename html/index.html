@@ -11,13 +11,15 @@
     <script type="text/javascript" src="../js/code.js"></script>
     <script type="text/javascript" src="../js/bandas.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <title>Calculadora resistores</title>
+    <title>Calculadora de resistores</title>
 </head>
 
 <body>
-    <center><header id="cabecera">
-        Calculadora de Resistores
-    </header></center>
+    <center>
+        <header id="cabecera">
+            Calculadora de Resistores
+        </header>
+    </center>
     <div id="container">
         <nav>
             <div>
@@ -79,66 +81,55 @@
                                 <option value="0.1" class="dorado">Dorado (x0.1 Ω)</option>
                                 <option value="0.01" class="plata">Plata (x0.01 Ω)</option>
                             </select>
-                        </div>                  
                         </div>
-                        <div id="de">&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            Valor del Resistor:     
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;
-                            Unidad:                
-                        <div class="box">
-                            <!--VALOR DEL RESISTOR-->
-                            <input type="text" id="caja" name="caja" value="" class="valor"/>
-                            <select name="" class="uni">
-                                <option value="" selected class="">Ohmios</option>
-                                <option value="" class="">Kiloohmios</option>
-                                <option value="" class="">Megaohmios</option>
-                                <option value="" class="">Gigaohmios</option>
-                            </select>
+                </div>
+                <div id="de">
+                    Valor del Resistor:
+                    <div class="box">
+                        <!--VALOR DEL RESISTOR-->
+                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                    </div>
+
+                    <!-- IMAGEN DE RESISTOR-->
+                    <div class="box1">
+                        <div class="ai"></div>
+                        <div class="a1"></div>
+                        <div class="a2" id="body"></div>
+                        <div class="a3"></div>
+                        <div class="a4"></div>
+                        <div class="a5" id="body1"></div>
+                        <div class="a6"></div>
+                        <div class="a7" id="body2"></div>
+                        <div class="a8"></div>
+                        <div class="a9" id="body3"></div>
+                        <div class="a10"></div>
+                        <div class="a11"></div>
+                        <div class="a12" id="body4"></div>
+                        <div class="a13"></div>
+                        <div class="ad"></div>
+                    </div>
+                    <div class="box2">
+                        <!-- BOTONES CALCULAR Y LIMPIAR -->
+                        <input type="button" value="CALCULAR" onclick="calcular3bandas()" class="submit0" />
+                        <input type="button" value="LIMPIAR" onclick="limpiar3bandas()" class="submit1" />
+                    </div>
+                    <div class="boxx">
+                        <input id="mostrar-modal" type="radio" name="modal" />
+                        <label for="mostrar-modal" class="submit2">Ver Código de Colores &#9660;</label>
+                        <input id="cerrar-modal" type="radio" name="modal" />
+                        <label for="cerrar-modal">Cerrar</label>
+                        <div id="modal">
+                            <h5>CÓDIGO DE COLORES PARA RESISTORES DE 3 BANDAS</h5>
+                            <img src="../img/3b.png" width="400px" class="ta">
                         </div>
-                        <div class="box1">
-                            <!-- IMAGEN DE RESISTOR-->
-                            <div class="ai" ></div>
-                            <div class="a1" ></div>
-                            <div class="a2" id="body"></div>
-                            <div class="a3"></div>
-                            <div class="a4"></div>
-                            <div class="a5" id="body1"></div>
-                            <div class="a6"></div>
-                            <div class="a7" id="body2"></div>
-                            <div class="a8"></div>
-                            <div class="a9" id="body3"></div>
-                            <div class="a10"></div>
-                            <div class="a11"></div>
-                            <div class="a12" id="body4"></div>
-                            <div class="a13"></div>
-                            <div class="ad"></div>
-                        </div>
-                        <div class="box2">
-                            <!-- BOTONES CALCULAR Y LIMPIAR -->
-                            <input type="button" value="CALCULAR" onclick="calcular3bandas()" class="submit0"/>
-                            <input type="button" value="LIMPIAR" onclick="limpiar3bandas()" class="submit1"/>
-                        </div>
-                        <div class="boxx">
-                            <input id="mostrar-modal" type="radio" name="modal" />
-                            <label for="mostrar-modal" class="submit2">Ver Código de Colores &#9660;</label>
-                            <input id="cerrar-modal" type="radio" name="modal" />
-                            <label for="cerrar-modal">Cerrar</label>
-                            <div id="modal">
-                                <h5>CÓDIGO DE COLORES PARA RESISTORES DE 3 BANDAS</h5>
-                                <img src="../img/3b.png" width="400px" class="ta">
-                            </div>
-                        </div>
-                     </form>
+                    </div>
+                    </form>
                 </div>
             </div>
 
             <!-- RESITOR DE 4 BANDAS-->
             <div id="Pa" onclick="Paris">
-                <div id="iz">Seleccione los colores de las Bandas: <br><br>                                       
+                <div id="iz">Seleccione los colores de las Bandas: <br><br>
                     <form name="f4bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
                             <select name="b1" class="selexb1" onchange="cambiarColor4b()">
@@ -187,81 +178,69 @@
                                 <option value="0.01" class="plata">Plata (x0.01 Ω)</option>
                             </select>
                         </div><br>
-                        <div class="select"> Tolerancia <br>                        
+                        <div class="select"> Tolerancia <br>
                             <select name="tol" class="selextol" onchange="cambiarColor4b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
-                                <option value="± 1%" class="marron">Marron   ± 1%</option>
-                                <option value="± 2%" class="rojo">Rojo   ± 2%</option>
-                                <option value="± 0.5%" class="verde">Verde   ± 0.5%</option>
-                                <option value="± 0.25%" class="azul">Azul   ± 0.25%</option>
-                                <option value="± 0.1%" class="violeta">Violeta   ± 0.1%</option>
-                                <option value="± 0.05%" class="gris">Gris   ± 0.05%</option>
-                                <option value="± 5%" class="dorado">Dorado   ± 5% </option>
-                                <option value="± 10%" class="plata">Plata   ± 10%</option>
+                                <option value="± 1%" class="marron">Marron ± 1%</option>
+                                <option value="± 2%" class="rojo">Rojo ± 2%</option>
+                                <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
+                                <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
+                                <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
+                                <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
+                                <option value="± 5%" class="dorado">Dorado ± 5% </option>
+                                <option value="± 10%" class="plata">Plata ± 10%</option>
                             </select>
                         </div>
+                </div>
+                <div id="de">
+                    Valor del Resistor:
+                    <div class="box">
+                        <!--VALOR DEL RESISTOR-->
+                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                    </div>
+                    <div class="box1">
+                        <!-- IMAGEN DE RESISTOR-->
+                        <div class="ai"></div>
+                        <div class="a1"></div>
+                        <div class="a2" id="body"></div>
+                        <div class="a3"></div>
+                        <div class="a4"></div>
+                        <div class="a5" id="body1"></div>
+                        <div class="a6"></div>
+                        <div class="a7" id="body2"></div>
+                        <div class="a8"></div>
+                        <div class="a9" id="body3"></div>
+                        <div class="a10"></div>
+                        <div class="a11"></div>
+                        <div class="a12" id="body4"></div>
+                        <div class="a13"></div>
+                        <div class="ad"></div>
+                    </div>
+                    <div class="box2">
+                        <!-- BOTONES CALCULAR Y LIMPIAR -->
+                        <input type="button" value="CALCULAR" onclick="calcular4bandas()" class="submit0" />
+                        <input type="button" value="LIMPIAR" onclick="limpiar4bandas()" class="submit1" />
+                    </div>
+                    <div class="boxx">
+                        <input id="mostrar-ventana" type="radio" name="ventana" />
+                        <label for="mostrar-ventana" class="submit2">Ver Código de Colores &#9660;</label>
+                        <input id="cerrar-ventana" type="radio" name="ventana" />
+                        <label for="cerrar-ventana">Cerrar</label>
+                        <div id="ventana">
+                            <h5>CÓDIGO DE COLORES PARA RESISTORES DE 4 BANDAS</h5>
+                            <img src="../img/4b.png" height="400px" class="ta">
                         </div>
-                        <div id="de">&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            Valor del Resistor:     
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;
-                            Unidad:                
-                        <div class="box">
-                            <!--VALOR DEL RESISTOR-->
-                            <input type="text" id="caja" name="caja" value="" class="valor"/>
-                            <select name="" class="uni">
-                                <option value="" selected class="">Ohmios</option>
-                                <option value="" class="">Kiloohmios</option>
-                                <option value="" class="">Megaohmios</option>
-                                <option value="" class="">Gigaohmios</option>
-                            </select>
-                        </div>
-                        <div class="box1">
-                            <!-- IMAGEN DE RESISTOR-->
-                            <div class="ai" ></div>
-                            <div class="a1" ></div>
-                            <div class="a2" id="body"></div>
-                            <div class="a3"></div>
-                            <div class="a4"></div>
-                            <div class="a5" id="body1"></div>
-                            <div class="a6"></div>
-                            <div class="a7" id="body2"></div>
-                            <div class="a8"></div>
-                            <div class="a9" id="body3"></div>
-                            <div class="a10"></div>
-                            <div class="a11"></div>
-                            <div class="a12" id="body4"></div>
-                            <div class="a13"></div>
-                            <div class="ad"></div>
-                        </div>
-                        <div class="box2">
-                            <!-- BOTONES CALCULAR Y LIMPIAR -->
-                            <input type="button" value="CALCULAR" onclick="calcular4bandas()" class="submit0"/>
-                            <input type="button" value="LIMPIAR" onclick="limpiar4bandas()" class="submit1"/>
-                        </div>
-                        <div class="boxx">
-                            <input id="mostrar-ventana" type="radio" name="ventana" />
-                            <label for="mostrar-ventana" class="submit2">Ver Código de Colores &#9660;</label>
-                            <input id="cerrar-ventana" type="radio" name="ventana" />
-                            <label for="cerrar-ventana">Cerrar</label>
-                            <div id="ventana">
-                                <h5>CÓDIGO DE COLORES PARA RESISTORES DE 4 BANDAS</h5>
-                                <img src="../img/4b.png" height="400px" class="ta">
-                            </div>
-                        </div>
-                    </form>            
+                    </div>
+                    </form>
                 </div>
             </div>
-            
+
             <!-- RESITOR DE 5 BANDAS-->
             <div id="To" onclick="Tokyo">
                 <div id="iz">Seleccione los colores de las Bandas: <br><br>
                     <form name="f5bandas" action="../html/index.html" method="POST">
                         <div class="select"> Primera Banda <br>
-                            <select name="b1" class="selexb1"  onchange="cambiarColor5b()">
+                            <select name="b1" class="selexb1" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
                                 <option value="0" class="negro">Negro (0)</option>
                                 <option value="1" class="marron">Marrón (1)</option>
@@ -325,72 +304,59 @@
                         <div class="select"> Tolerancia <br>
                             <select name="tol" class="selextol" onchange="cambiarColor5b()">
                                 <option value="-1" selected class="sele">Seleccione un color</option>
-                                <option value="± 1%" class="marron">Marron   ± 1%</option>
-                                <option value="± 2%" class="rojo">Rojo   ± 2%</option>
-                                <option value="± 0.5%" class="verde">Verde   ± 0.5%</option>
-                                <option value="± 0.25%" class="azul">Azul   ± 0.25%</option>
-                                <option value="± 0.1%" class="violeta">Violeta   ± 0.1%</option>
-                                <option value="± 0.05%" class="gris">Gris   ± 0.05%</option>
-                                <option value="± 5%" class="dorado">Dorado   ± 5% </option>
-                                <option value="± 10%" class="plata">Plata   ± 10%</option>
+                                <option value="± 1%" class="marron">Marron ± 1%</option>
+                                <option value="± 2%" class="rojo">Rojo ± 2%</option>
+                                <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
+                                <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
+                                <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
+                                <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
+                                <option value="± 5%" class="dorado">Dorado ± 5% </option>
+                                <option value="± 10%" class="plata">Plata ± 10%</option>
                             </select>
                         </div>
+                </div>
+                <div id="de">
+                    Valor del Resistor:
+                    <div class="box">
+                        <!--VALOR DEL RESISTOR-->
+                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                    </div>
+                    <div class="box1">
+                        <!-- IMAGEN DE RESISTOR-->
+                        <div class="ai"></div>
+                        <div class="a1"></div>
+                        <div class="a2" id="body"></div>
+                        <div class="a3"></div>
+                        <div class="a4"></div>
+                        <div class="a5" id="body1"></div>
+                        <div class="a6"></div>
+                        <div class="a7" id="body2"></div>
+                        <div class="a8"></div>
+                        <div class="a9" id="body3"></div>
+                        <div class="a10"></div>
+                        <div class="a11"></div>
+                        <div class="a12" id="body4"></div>
+                        <div class="a13"></div>
+                        <div class="ad"></div>
+                    </div>
+                    <div class="box2">
+                        <!-- BOTONES CALCULAR Y LIMPIAR -->
+                        <input type="button" value="CALCULAR" onclick="calcular5bandas()" class="submit0" />
+                        <input type="button" value="LIMPIAR" onclick="limpiar5bandas()" class="submit1" />
+                    </div>
+                    <div class="boxx">
+                        <input id="mostrar-tabla" type="radio" name="tabla" />
+                        <label for="mostrar-tabla" class="submit2">Ver Código de Colores &#9660;</label>
+                        <input id="cerrar-tabla" type="radio" name="tabla" />
+                        <label for="cerrar-tabla">Cerrar</label>
+                        <div id="tabla">
+                            <h5>CÓDIGO DE COLORES PARA RESISTORES DE 5 BANDAS </h5>
+                            <img src="../img/5b.png" height="400px" class="ta">
                         </div>
-                        <div id="de">&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            Valor del Resistor:     
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;
-                            Unidad:                
-                        <div class="box">
-                            <!--VALOR DEL RESISTOR-->
-                            <input type="text" id="caja" name="caja" value="" class="valor"/>
-                            <select name="" class="uni">
-                                <option value="" selected class="">Ohmios</option>
-                                <option value="" class="">Kiloohmios</option>
-                                <option value="" class="">Megaohmios</option>
-                                <option value="" class="">Gigaohmios</option>
-                            </select>
-                        </div>
-                        <div class="box1">
-                            <!-- IMAGEN DE RESISTOR-->
-                            <div class="ai" ></div>
-                            <div class="a1" ></div>
-                            <div class="a2" id="body"></div>
-                            <div class="a3"></div>
-                            <div class="a4"></div>
-                            <div class="a5" id="body1"></div>
-                            <div class="a6"></div>
-                            <div class="a7" id="body2"></div>
-                            <div class="a8"></div>
-                            <div class="a9" id="body3"></div>
-                            <div class="a10"></div>
-                            <div class="a11"></div>
-                            <div class="a12" id="body4"></div>
-                            <div class="a13"></div>
-                            <div class="ad"></div>
-                        </div>
-                        <div class="box2">
-                            <!-- BOTONES CALCULAR Y LIMPIAR -->
-                            <input type="button" value="CALCULAR" onclick="calcular5bandas()" class="submit0"/>
-                            <input type="button" value="LIMPIAR" onclick="limpiar5bandas()" class="submit1"/>
-                        </div>
-                        <div class="boxx">
-                            <input id="mostrar-tabla" type="radio" name="tabla" />
-                            <label for="mostrar-tabla" class="submit2">Ver Código de Colores &#9660;</label>
-                            <input id="cerrar-tabla" type="radio" name="tabla" />
-                            <label for="cerrar-tabla">Cerrar</label>
-                            <div id="tabla">
-                                <h5>CÓDIGO DE COLORES PARA RESISTORES DE 5 BANDAS </h5>
-                                <img src="../img/5b.png" height="400px" class="ta">
-                            </div>
-                        </div>
-                    </form>            
+                    </div>
+                    </form>
                 </div>
             </div>
-
 
             <!-- CALCULAR VALOR A COLORES -->
 
@@ -402,7 +368,6 @@
                 David Ernesto Cruz Velásquez - CV16-I04-001
             </div>
         </main>
-
 
         <!-- VENTANAS -->
         <script type="text/javascript">
@@ -448,7 +413,7 @@
                 document.getElementById('Rom').style.backgroundColor = "#000000";
             }
         </script>
-        <!-- Finaliza -> CODIGO JS DE PESTAÑAS -->
     </div>
 </body>
+
 </html>
