@@ -91,6 +91,8 @@ header{
     padding-left: 0%;
     text-align: center;
 }
+
+/* Diseño de los select */
 .select{
     padding-top: 0px;
     margin-top: 0px;
@@ -106,6 +108,7 @@ header{
 }
 
 .selexb1{
+<<<<<<< HEAD
     border-radius: 8px;
     width: 320px;
     height: 32px;
@@ -113,6 +116,33 @@ header{
 }
 
 .selexb2{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selexb3{
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+.selexmult{
+=======
+>>>>>>> origin/Dev
+    border-radius: 8px;
+    width: 320px;
+    height: 32px;
+    font-size: 17px;
+}
+
+<<<<<<< HEAD
+.selextol{
+=======
+.selexb2{
+>>>>>>> origin/Dev
     border-radius: 8px;
     width: 320px;
     height: 32px;
@@ -140,6 +170,7 @@ header{
     font-size: 17px;
 }
 
+/* Clases de colores */
 .negro{
     background-color: black;
     color: white;
@@ -223,6 +254,17 @@ header{
     height: 50px;
     margin-left: 0px;
     text-align: center;
+<<<<<<< HEAD
+}
+.boxx{
+    margin-left: 4px;
+    width: 94%;
+    height: 90px;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+=======
+>>>>>>> origin/Dev
 }
 .boxx{
     margin-left: 4px;
@@ -232,6 +274,8 @@ header{
     margin-top: 0;
     text-align: center;
 }
+
+/* Caja y botones */
 .valor{
     height: 28px;
     width: 220px;
@@ -280,6 +324,7 @@ header{
 .submit1:hover{
     background-color: rgb(75, 73, 73);
 }
+<<<<<<< HEAD
 .uni{
     padding-left: 0px;
     margin-left: 7px;
@@ -291,6 +336,10 @@ header{
     border-radius: 8px;
     border: 2px solid red;
 }
+=======
+
+/* Diseño del nombre */
+>>>>>>> origin/Dev
 .nomb{
     margin-top: 2px;
     height: 18px;
