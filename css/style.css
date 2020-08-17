@@ -1,9 +1,12 @@
 /* PARAMETROS DE DISEÑO DE LA PAGINA PRINCIPAL */
-
+@font-face{
+    font-family: "OpenSans-SemiBold";
+    src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf");
+}
 body{
     padding: 0px;
     margin: 0px;
-    background-color: rgb(226, 135, 135);
+    background-color: #1f8aad;
     margin-top: 5px;
     padding-top: 0%;
     background-image: url(../img/wall.jpg);
@@ -27,8 +30,7 @@ nav div input{
     text-align: center;
     font-weight: bold;
     color: white;
-    font-family: "Open Sans";
-    font-style: bold;
+    font-family: "OpenSans-SemiBold";
     height: 50px;
     font-size: 20px;
 }
@@ -51,20 +53,19 @@ main{
 main div{
     padding-left: 20px;
     padding-top: 10px;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
 }
 #container{
-    margin-top: 10px;
+    margin-top: 0px;
 }
 header{
     font-size: 40px;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     font-weight: bolder;
     line-height: 70px;
     padding: 0px;
     margin: 0px;
-    background-color:  rgb(167, 5, 5);;
-    color: rgb(167, 5, 5);
+    background-color: #0F5269;
     color:  white;
     text-align: center;
     text-transform: uppercase;
@@ -86,7 +87,7 @@ header{
     display: block;
     width: 48%;
     height: 445px;
-    background-color: rgb(248, 212, 218);
+    background-color: #a7cdd8;
     float: left;
     padding-left: 0%;
     text-align: center;
@@ -105,6 +106,7 @@ header{
     height: 67px;
     background-color: #D6D3D3;
     border: 1px solid #D6D3D3;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .selexb1{
@@ -113,14 +115,12 @@ header{
     height: 32px;
     font-size: 17px;
 }
-
 .selexb2{
     border-radius: 8px;
     width: 320px;
     height: 32px;
     font-size: 17px;
 }
-
 .selexb3{
     border-radius: 8px;
     width: 320px;
@@ -191,6 +191,7 @@ header{
     background-color: silver;
     color: black;
 }
+/* Caja y botones */
 .box, 
 .box1,
 .box2{
@@ -202,9 +203,9 @@ header{
     font-size: 16px;
     display: inline-block;
     width: 380px;
-    background-color: rgb(248, 212, 218);
+    background-color: #a7cdd8;;
     margin-left: 20px;
-    
+    font-family: "OpenSans-SemiBold";
 }
 .box{
     border: 0px;
@@ -234,21 +235,21 @@ header{
     padding-top: 0;
     margin-top: 0;
     text-align: center;
+    font-family: "OpenSans-SemiBold";
 }
-
-/* Caja y botones */
 .valor{
     height: 28px;
     width: 220px;
     text-align: center;
     font-size: 20px;
-    border: 2px solid red;
+    border: 2px solid #0F5269;
     border-radius: 7px;
+    font-family: "OpenSans-SemiBold";
 }
 .submit0, .submit1{
     margin-right: 10px;
     margin-left: 10px;
-    background: rgb(136, 2, 2);
+    background: #0F5269;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -258,12 +259,12 @@ header{
     border-radius: 10px;
     width: 160px;
     font-weight: bold;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
 }
 .submit2{
     margin-right: 10px;
     margin-left: 10px;
-    background: rgb(136, 2, 2);
+    background: #031e27;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -273,30 +274,30 @@ header{
     border-radius: 10px;
     width: 300px;
     font-weight: bold;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     height: 35px;
 }
 .submit1{
     background-color: black;
 }
 .submit0:hover{
-    background-color: rgb(189, 70, 70);
+    background-color: #3191b1;
 }
 .submit1:hover{
-    background-color: rgb(75, 73, 73);
+    background-color: rgb(104, 103, 103);
 }
 
 /* Diseño del nombre */
 .nomb{
     margin-top: 2px;
     height: 18px;
-    background-color: rgb(136, 2, 2);
+    background-color: #0F5269;
     color: white;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
     line-height: 0px;
     line-height: 0.4;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     text-transform: uppercase;
 }
