@@ -24,7 +24,7 @@ h2 {
     display: none;
   }
   #mostrar-modal + label {
-    background-color: rgb(59, 58, 58);
+    background-color: #A9361C;
     display: table;
     margin: auto;
     color: #fff;
@@ -33,12 +33,12 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     border-radius: 10px;
     font-size: 20px;
   }
   #mostrar-modal + label:hover {
-    background-color: rgb(138, 137, 137);
+    background-color: #EB8C2F;
   }
   #mostrar-modal:checked ~ #modal {
     top: 0;
@@ -66,7 +66,7 @@ h2 {
     border-radius: 5px;
     display: none;
     transition: all .5s;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     font-size: 25px;
   }
   #cerrar-modal:checked ~ #modal {
@@ -91,7 +91,7 @@ h2 {
     display: none;
   }
   #mostrar-ventana + label {
-    background-color: rgb(59, 58, 58);
+    background-color: #A9361C;
     display: table;
     margin: auto;
     color: #fff;
@@ -100,12 +100,12 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     border-radius: 10px;
     font-size: 20px;
   }
   #mostrar-ventana + label:hover {
-    background-color: rgb(138, 137, 137);
+    background-color: #EB8C2F;
   }
   #mostrar-ventana:checked ~ #ventana {
     top: 0;
@@ -133,7 +133,7 @@ h2 {
     border-radius: 5px;
     display: none;
     transition: all .5s;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     font-size: 25px;
   }
   #cerrar-ventana:checked ~ #ventana {
@@ -158,7 +158,7 @@ h2 {
     display: none;
   }
   #mostrar-tabla + label {
-    background-color: rgb(59, 58, 58);
+    background-color: #A9361C;
     display: table;
     margin: auto;
     color: #fff;
@@ -167,12 +167,12 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     border-radius: 10px;
     font-size: 20px;
   }
   #mostrar-tabla + label:hover {
-    background-color: rgb(138, 137, 137);
+    background-color: #EB8C2F;
   }
   #mostrar-tabla:checked ~ #tabla {
     top: 0;
@@ -200,7 +200,7 @@ h2 {
     border-radius: 5px;
     display: none;
     transition: all .5s;
-    font-family: "Open Sans";
+    font-family: "OpenSans-SemiBold";
     font-size: 25px;
   }
   #cerrar-tabla:checked ~ #tabla {
