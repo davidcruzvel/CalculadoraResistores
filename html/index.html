@@ -360,10 +360,79 @@
             </div>
 
             <!-- CALCULAR VALOR A COLORES -->
-
+                        
             <div id="ventanaiv" onclick="ventanaintrovalor">
+                
+                <!-- CODIGO EXPERIMENTAL INICIA -->
+                
                 <h3>Introducir valor</h3>
-                <p>Esta función no está disponible, se encuentra en desarrollo.</p>
+                
+                <form name="ingresarValor" action="../html/index.html" method="POST">
+
+                    <!-- CAJA DE VALORES -->
+                    <p>Ingrese el valor del resistor</p>
+                    <input type="text" name="caja" value="" class="" />
+
+                    <!-- SELECCION DE LAS BANDAS -->
+                    <p>Seleccione el numero de bandas a mostrar</p>
+                    <select name="nbandas" class="" onchange="mostrarBandas(this);">
+                        <option value="-1" selected class="sele">Seleccione una opcion</option>
+                        <option value="3bandas" class="">3 Bandas</option>
+                        <option value="4bandas" class="">4 Bandas</option>
+                        <option value="5bandas" class="">5 Bandas</option>
+                    </select>
+
+                    <!-- SELECCION DE LAS UNIDADES -->
+                    <p>Seleccione las unidades a convertir</p>
+                    <select name="uni" class="" onchange="">
+                        <option value="-1" selected class="sele">Seleccione una opcion</option>
+                        <option value="o" class="">Ohmios (Ω)</option>
+                        <option value="k" class="">Kiloohmios (kΩ)</option>
+                        <option value="m" class="">Megaohmios (MΩ)</option>
+                        <option value="g" class="">Gigaohmios (GΩ)</option>
+                    </select>
+                    
+                    <!-- SELECCIONA LA TOLERANCIA -->
+                    <p>Seleccione la tolerancia</p>
+                    <select id="switchBandas" disabled name="tol" class="selextol" onchange="cambiarColorTol()">
+                        <option value="-1" selected class="sele">Seleccione un color</option>
+                        <option value="± 1%" class="marron">Marron ± 1%</option>
+                        <option value="± 2%" class="rojo">Rojo ± 2%</option>
+                        <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
+                        <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
+                        <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
+                        <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
+                        <option value="± 5%" class="dorado">Dorado ± 5% </option>
+                        <option value="± 10%" class="plata">Plata ± 10%</option>
+                    </select><br><br><br>
+
+                    <!-- BOTONES -->
+                    <input type="button" value="CALCULAR" onclick="valorBandas(); cambiarColorTol()" class="submit0" />
+                    <input type="button" value="LIMPIAR" onclick="" class="submit1" />
+
+                    <br><br>
+
+                    <div class="box1">
+                        <!-- IMAGEN DE RESISTOR-->
+                        <div class="ai"></div>
+                        <div class="a1"></div>
+                        <div class="a2" id="body"></div>
+                        <div class="a3"></div>
+                        <div class="a4"></div>
+                        <div class="a5" id="body1"></div>
+                        <div class="a6"></div>
+                        <div class="a7" id="body2"></div>
+                        <div class="a8"></div>
+                        <div class="a9" id="body3"></div>
+                        <div class="a10"></div>
+                        <div class="a11"></div>
+                        <div class="a12" id="body4"></div>
+                        <div class="a13"></div>
+                        <div class="ad"></div>
+                    </div>
+                </form>
+                <!-- CODIGO EXPERIMENTAL FIN-->
+
             </div>
             <div class="nomb">
                 David Ernesto Cruz Velásquez - CV16-I04-001
