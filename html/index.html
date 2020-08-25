@@ -83,7 +83,7 @@
                     Valor del Resistor:
                     <div class="box">
                         <!--VALOR DEL RESISTOR-->
-                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                        <input type="text" id="caja" disabled name="caja" value="" class="valor" />
                     </div>
 
                     <!-- IMAGEN DE RESISTOR-->
@@ -194,7 +194,7 @@
                     Valor del Resistor:
                     <div class="box">
                         <!--VALOR DEL RESISTOR-->
-                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                        <input type="text" id="caja" disabled name="caja" value="" class="valor" />
                     </div>
                     <div class="box1">
                         <!-- IMAGEN DE RESISTOR-->
@@ -319,7 +319,7 @@
                     Valor del Resistor:
                     <div class="box">
                         <!--VALOR DEL RESISTOR-->
-                        <input type="text" id="caja" name="caja" value="" class="valor" />
+                        <input type="text" id="caja" disabled name="caja" value="" class="valor" />
                     </div>
                     <div class="box1">
                         <!-- IMAGEN DE RESISTOR-->
@@ -364,37 +364,38 @@
             <div id="ventanaiv" onclick="ventanaintrovalor">
                 
                 <!-- CODIGO EXPERIMENTAL INICIA -->
-                
-                <h3>Introducir valor</h3>
-                
+                <div id="iz">
                 <form name="ingresarValor" action="../html/index.html" method="POST">
 
                     <!-- CAJA DE VALORES -->
-                    <p>Ingrese el valor del resistor</p>
-                    <input type="text" name="caja" value="" class="" />
+                    <div class="select1">Ingrese el valor del resistor <br>
+                        <input type="text" name="caja" value="" class="value" />
+                    </div>
 
                     <!-- SELECCION DE LAS BANDAS -->
-                    <p>Seleccione el numero de bandas a mostrar</p>
-                    <select name="nbandas" class="" onchange="mostrarBandas(this);">
+                    <div class="select1">Seleccione el número de bandas a mostrar <br>
+                    <select name="nbandas" class="selex" onchange="mostrarBandas(this);">
                         <option value="-1" selected class="sele">Seleccione una opcion</option>
                         <option value="3bandas" class="">3 Bandas</option>
                         <option value="4bandas" class="">4 Bandas</option>
                         <option value="5bandas" class="">5 Bandas</option>
                     </select>
+                    </div> 
 
                     <!-- SELECCION DE LAS UNIDADES -->
-                    <p>Seleccione las unidades a convertir</p>
-                    <select name="uni" class="" onchange="">
+                    <div class="select1">Seleccione las unidades a convertir <br>
+                    <select name="uni" class="selex" onchange="">
                         <option value="-1" selected class="sele">Seleccione una opcion</option>
                         <option value="o" class="">Ohmios (Ω)</option>
                         <option value="k" class="">Kiloohmios (kΩ)</option>
                         <option value="m" class="">Megaohmios (MΩ)</option>
                         <option value="g" class="">Gigaohmios (GΩ)</option>
                     </select>
+                    </div>
                     
                     <!-- SELECCIONA LA TOLERANCIA -->
-                    <p>Seleccione la tolerancia</p>
-                    <select id="switchBandas" disabled name="tol" class="selextol" onchange="cambiarColorTol()">
+                    <div class="select1">Seleccione la tolerancia <br>
+                    <select id="switchBandas" disabled name="tol" class="selextolerancia" onchange="cambiarSelectTol()">
                         <option value="-1" selected class="sele">Seleccione un color</option>
                         <option value="± 1%" class="marron">Marron ± 1%</option>
                         <option value="± 2%" class="rojo">Rojo ± 2%</option>
@@ -404,14 +405,15 @@
                         <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
                         <option value="± 5%" class="dorado">Dorado ± 5% </option>
                         <option value="± 10%" class="plata">Plata ± 10%</option>
-                    </select><br><br><br>
-
+                    </select>
+                    </div><br><br>
                     <!-- BOTONES -->
-                    <input type="button" value="CALCULAR" onclick="valorBandas(); cambiarColorTol()" class="submit0" />
+                    <input type="button" value="CALCULAR" onclick="valorBandas(); cambiarColorTol(); mostrarResultado()" class="submit0" />
                     <input type="button" value="LIMPIAR" onclick="" class="submit1" />
 
                     <br><br>
-
+                </div>
+                <div id="de"> <br><br><br>
                     <div class="box1">
                         <!-- IMAGEN DE RESISTOR-->
                         <div class="ai"></div>
@@ -430,6 +432,11 @@
                         <div class="a13"></div>
                         <div class="ad"></div>
                     </div>
+                    <div>
+                        <!-- MOSTRANDO VALOR DEL RESISTOR -->
+                        <input type="text" id="id_resultado" disabled name="caja_resultado" value="" class="valor" />
+                    </div>
+                </div>
                 </form>
                 <!-- CODIGO EXPERIMENTAL FIN-->
 

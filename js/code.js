@@ -837,7 +837,6 @@ function valorBandas(){
     }else{ //No se escogió ninguna opción
         alert("ERROR: Seleccione la cantidad de bandas del resistor.");
     }
-
 }
 
 function mostrarBandas(elemento){
@@ -850,14 +849,14 @@ function mostrarBandas(elemento){
         document.ingresarValor.tol.value = -1;
         //Limpiar colores del select y de la banda
         var tolclass = document.getElementsByClassName("a12");
-        var banselextol = document.getElementsByClassName("selextol");
-        for (var i = 0; i < tolclass.length; i++) {
-                tolclass[i].style.backgroundColor = "#e1c699"; //beige
-        }
+        var banselextol = document.getElementsByClassName("selextolerancia");
         for (var i = 0; i < banselextol.length; i++) {
             banselextol[i].style.backgroundColor = "white"; //blanco
             banselextol[i].style.color = "black"; //Negro
         }
+        for (var i = 0; i < tolclass.length; i++) {
+                tolclass[i].style.backgroundColor = "#e1c699"; //beige
+        }        
         //Inhabilitar el select de la tolerancia
         input.disabled = true;       
     }else{
@@ -866,13 +865,86 @@ function mostrarBandas(elemento){
     }    
 }
 
+function cambiarSelectTol(){
+    //Obteniendo el valor del selector
+    var tolerancia = document.ingresarValor.tol.value;
+    //Cambiando color al select de tolerancia
+    var banselextol = document.getElementsByClassName("selextolerancia");
+
+    switch (tolerancia) {
+        case "-1": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "white"; //blanco
+                banselextol[i].style.color = "black"; //negro
+            }
+        } break;
+
+        case "± 1%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#5d2d2d"; //marron
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 2%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#fe0000"; //rojo
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 0.5%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#008000"; //verde
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 0.25%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#0002fb"; //azul
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 0.1%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#81007f"; //violeta
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 0.05%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#707070"; //gris
+                banselextol[i].style.color = "white"; //blanco
+            }
+        } break;
+
+        case "± 5%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#daa521"; //dorado
+                banselextol[i].style.color = "black"; //negro
+            }
+        } break;
+
+        case "± 10%": {
+            for (var i = 0; i < banselextol.length; i++) {
+                banselextol[i].style.backgroundColor = "#c0c0be"; //plata
+                banselextol[i].style.color = "black"; //negro
+            }
+        } break;
+
+        default: {
+        }
+    } //fin switch
+}
+
 function cambiarColorTol(){
     //Obteniendo el valor del selector
     var tolerancia = document.ingresarValor.tol.value;
     //Peticion de la clase de la tolerancia
     var tolclass = document.getElementsByClassName("a12");
-    //Cambiando color al select de tolerancia
-    var banselextol = document.getElementsByClassName("selextol");
 
     var opcion = document.ingresarValor.nbandas.value;
 
@@ -885,19 +957,11 @@ function cambiarColorTol(){
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#e1c699"; //beige
                 }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "white"; //blanco
-                    banselextol[i].style.color = "black"; //negro
-                }
             } break;
 
             case "± 1%": {
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#5d2d2d"; //marron
-                }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#5d2d2d"; //marron
-                    banselextol[i].style.color = "white"; //blanco
                 }
             } break;
 
@@ -905,19 +969,11 @@ function cambiarColorTol(){
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#fe0000"; //rojo
                 }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#fe0000"; //rojo
-                    banselextol[i].style.color = "white"; //blanco
-                }
             } break;
 
             case "± 0.5%": {
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#008000"; //verde
-                }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#008000"; //verde
-                    banselextol[i].style.color = "white"; //blanco
                 }
             } break;
 
@@ -925,19 +981,11 @@ function cambiarColorTol(){
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#0002fb"; //azul
                 }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#0002fb"; //azul
-                    banselextol[i].style.color = "white"; //blanco
-                }
             } break;
 
             case "± 0.1%": {
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#81007f"; //violeta
-                }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#81007f"; //violeta
-                    banselextol[i].style.color = "white"; //blanco
                 }
             } break;
 
@@ -945,19 +993,11 @@ function cambiarColorTol(){
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#707070"; //gris
                 }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#707070"; //gris
-                    banselextol[i].style.color = "white"; //blanco
-                }
             } break;
 
             case "± 5%": {
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#daa521"; //dorado
-                }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#daa521"; //dorado
-                    banselextol[i].style.color = "black"; //negro
                 }
             } break;
 
@@ -965,15 +1005,50 @@ function cambiarColorTol(){
                 for (var i = 0; i < tolclass.length; i++) {
                     tolclass[i].style.backgroundColor = "#c0c0be"; //plata
                 }
-                for (var i = 0; i < banselextol.length; i++) {
-                    banselextol[i].style.backgroundColor = "#c0c0be"; //plata
-                    banselextol[i].style.color = "black"; //negro
-                }
             } break;
 
             default: {
             }
         } //fin switch
+    }
+}
+
+function mostrarResultado(){
+    var vReal = document.ingresarValor.caja.value;
+    var multi = document.ingresarValor.uni.value;
+    var multiplicador = "";
+    var tole = document.ingresarValor.tol.value;
+    var result = "";
+    var opcion = document.ingresarValor.nbandas.value;
+
+    switch(multi){
+        case "o":{
+            multiplicador = " Ω ";
+        }
+        break;
+
+        case "k":{
+            multiplicador = " kΩ ";
+        }
+        break;
+
+        case "m":{
+            multiplicador = " MΩ ";
+        }
+        break;
+
+        case "g":{
+            multiplicador = " GΩ ";
+        }
+    }
+
+    if(opcion == "3bandas"){
+        tole = "± 20%";
+        result = vReal + multiplicador + tole;
+        document.ingresarValor.caja_resultado.value = result;
+    }else{
+        result = vReal + multiplicador + tole;
+        document.ingresarValor.caja_resultado.value = result;
     }
 }
 
