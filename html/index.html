@@ -22,7 +22,7 @@
                 <input type="button" id="v3b" value="3 Bandas" onclick="ventana3bandas(); limpiarVentana()">
                 <input type="button" id="v4b" value="4 Bandas" onclick="ventana4bandas(); limpiarVentana()">
                 <input type="button" id="v5b" value="5 Bandas" onclick="ventana5bandas(); limpiarVentana()">
-                <input type="button" id="viv" value="Introducir Valor" onclick="ventanaintrovalor();">
+                <input type="button" id="viv" value="Introducir Valor" onclick="ventanaintrovalor(); limpiarIngresarValor()">
             </div>
         </nav>
         <main>
@@ -374,42 +374,42 @@
 
                     <!-- SELECCION DE LAS BANDAS -->
                     <div class="select1">Seleccione el número de bandas a mostrar <br>
-                    <select name="nbandas" class="selex" onchange="mostrarBandas(this);">
-                        <option value="-1" selected class="sele">Seleccione una opcion</option>
-                        <option value="3bandas" class="">3 Bandas</option>
-                        <option value="4bandas" class="">4 Bandas</option>
-                        <option value="5bandas" class="">5 Bandas</option>
-                    </select>
+                        <select name="nbandas" class="selex" onchange="mostrarBandas(this);">
+                            <option value="-1" selected class="sele">Seleccione una opcion</option>
+                            <option value="3bandas" class="">3 Bandas</option>
+                            <option value="4bandas" class="">4 Bandas</option>
+                            <option value="5bandas" class="">5 Bandas</option>
+                        </select>
                     </div> 
 
                     <!-- SELECCION DE LAS UNIDADES -->
                     <div class="select1">Seleccione las unidades a convertir <br>
-                    <select name="uni" class="selex" onchange="">
-                        <option value="-1" selected class="sele">Seleccione una opcion</option>
-                        <option value="o" class="">Ohmios (Ω)</option>
-                        <option value="k" class="">Kiloohmios (kΩ)</option>
-                        <option value="m" class="">Megaohmios (MΩ)</option>
-                        <option value="g" class="">Gigaohmios (GΩ)</option>
-                    </select>
+                        <select name="uni" class="selex" onchange="">
+                            <option value="-1" selected class="sele">Seleccione una opcion</option>
+                            <option value="o" class="">Ohmios (Ω)</option>
+                            <option value="k" class="">Kiloohmios (kΩ)</option>
+                            <option value="m" class="">Megaohmios (MΩ)</option>
+                            <option value="g" class="">Gigaohmios (GΩ)</option>
+                        </select>
                     </div>
                     
                     <!-- SELECCIONA LA TOLERANCIA -->
                     <div class="select1">Seleccione la tolerancia <br>
-                    <select id="switchBandas" disabled name="tol" class="selextolerancia" onchange="cambiarSelectTol()">
-                        <option value="-1" selected class="sele">Seleccione un color</option>
-                        <option value="± 1%" class="marron">Marron ± 1%</option>
-                        <option value="± 2%" class="rojo">Rojo ± 2%</option>
-                        <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
-                        <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
-                        <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
-                        <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
-                        <option value="± 5%" class="dorado">Dorado ± 5% </option>
-                        <option value="± 10%" class="plata">Plata ± 10%</option>
-                    </select>
+                        <select id="switchBandas" disabled name="tol" class="selextolerancia" onchange="cambiarSelectTol()">
+                            <option value="-1" selected class="sele">Seleccione un color</option>
+                            <option value="± 1%" class="marron">Marron ± 1%</option>
+                            <option value="± 2%" class="rojo">Rojo ± 2%</option>
+                            <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
+                            <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
+                            <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
+                            <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
+                            <option value="± 5%" class="dorado">Dorado ± 5% </option>
+                            <option value="± 10%" class="plata">Plata ± 10%</option>
+                        </select>
                     </div><br><br>
                     <!-- BOTONES -->
-                    <input type="button" value="CALCULAR" onclick="valorBandas(); cambiarColorTol(); mostrarResultado()" class="submit0" />
-                    <input type="button" value="LIMPIAR" onclick="" class="submit1" />
+                    <input type="button" value="CALCULAR" onclick=" mostrarResultado(); valorBandas(); cambiarColorTol()" class="submit0" />
+                    <input type="button" value="LIMPIAR" onclick="limpiarIngresarValor()" class="submit1" />
 
                     <br><br>
                 </div>
