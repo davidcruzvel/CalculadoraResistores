@@ -1,9 +1,12 @@
 # CalculadoraResistores
 CALCULADORA DE RESISTORES v1.2
 
-Versión estable - Español.
-País: El Salvador, CA.
-Universidad de Sonsonate.
+Información:
+  - Versión estable - Español.
+ 
+ Origen:
+  - Universidad de Sonsonate.
+  - País: El Salvador, CA.
 
 Autores:
   - David Ernesto Cruz Velásquez
