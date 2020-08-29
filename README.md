@@ -1,3 +1,2 @@
 # CalculadoraResistores
-Calculadora de resistores
-Versión estable v1.0 (Fase 1)
+CALCULADORA DE RESISTORES v1.2
