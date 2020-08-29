@@ -1387,11 +1387,20 @@ function mostrarBandas(elemento){
     //Obteniendo el ID de la tolerancia
     var input = document.getElementById("switchBandas");
     //Obteniendo el valor del select
-    var valorSelect = elemento.value;
-    if(valorSelect == "3bandas"){
+    var valorSelect = elemento.value;    
+    if (valorSelect == "4bandas"){
+        //Limpiar la 3era banda
+        var ban3class = document.getElementsByClassName("a9");
+        for (var i = 0; i < ban3class.length; i++) {
+            ban3class[i].style.backgroundColor = "#e1c699"; //beige
+        }
+        //El select se habilita
+        input.disabled = false;
+    }else if(valorSelect == "3bandas"){
         //Reinicia el select
         document.ingresarValor.tol.value = -1;
-        //Limpiar colores del select y de la banda
+        //Limpia colores del select y de la 3era banda y tolerancia
+        var ban3class = document.getElementsByClassName("a9");
         var tolclass = document.getElementsByClassName("a12");
         var banselextol = document.getElementsByClassName("selextolerancia");
         for (var i = 0; i < banselextol.length; i++) {
@@ -1400,13 +1409,17 @@ function mostrarBandas(elemento){
         }
         for (var i = 0; i < tolclass.length; i++) {
                 tolclass[i].style.backgroundColor = "#e1c699"; //beige
+        }
+        for (var i = 0; i < ban3class.length; i++) {
+            ban3class[i].style.backgroundColor = "#e1c699"; //beige
         }        
         //Inhabilitar el select de la tolerancia
-        input.disabled = true;       
+        input.disabled = true;
+
     }else{
         //El select se habilita
         input.disabled = false;        
-    }    
+    }
 }
 
 //FUNCION DE CAMBIO DE COLOR DEL SELECTOR DE TOL
