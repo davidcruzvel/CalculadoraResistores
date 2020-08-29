@@ -388,6 +388,7 @@ function valorBandas(){
     var contador = 0;
     var selectMult = document.ingresarValor.uni.value;
     var valorReal = 0;
+    var validacionDeValor = 0;
     var opcion = document.ingresarValor.nbandas.value;
 
     if(caja == ""){
@@ -596,8 +597,9 @@ function valorBandas(){
                         }break;
                         
                         default:
-                            alert("ERROR:El número ingresado es demasiado alto, no puede\nexistir un resistor de esa magnitud");
+                            alert("ERROR: El número ingresado es demasiado alto, no puede\nexistir un resistor de esa magnitud");
                             //limpiarTodo
+                            validacionDeValor = 1;
                             limpiarIngresarValor();
                         break;
                     }//fin switch
@@ -606,10 +608,15 @@ function valorBandas(){
 
             //Asignando valor a las bandas
             //Peticion de la clase 
-            var ban1class = document.getElementsByClassName("a2");
-            var ban2class = document.getElementsByClassName("a5");
-            var multipliclass = document.getElementsByClassName("a7");
-
+            if(validacionDeValor == 1){
+                //Asignando valor a las bandas
+                //Peticion de la clase 
+                limpiarIngresarValor();
+            }else if(validacionDeValor == 0){
+                var ban1class = document.getElementsByClassName("a2");
+                var ban2class = document.getElementsByClassName("a5");
+                var multipliclass = document.getElementsByClassName("a7");
+            }
             //Cambiando primera banda
             //Cambiando colores a banda 1    
             switch (bnd1) {
@@ -1054,20 +1061,25 @@ function valorBandas(){
                         }break;
                         
                         default:
-                            alert("ERROR:El número ingresado es demasiado alto, no puede\nexistir un resistor de esa magnitud");
+                            alert("ERROR: El número ingresado es demasiado alto, no puede\nexistir un resistor de esa magnitud");
                             //limpiarTodo
+                            validacionDeValor = 1;
                             limpiarIngresarValor();
                         break;
                     }//fin switch
                 }//fin caso de mas de 1 num
             }//fin evaluacion
 
-            //Asignando valor a las bandas
-            //Peticion de la clase 
-            var ban1class = document.getElementsByClassName("a2");
-            var ban2class = document.getElementsByClassName("a5");
-            var ban3class = document.getElementsByClassName("a7");
-            var multipliclass = document.getElementsByClassName("a9");
+            if(validacionDeValor == 1){
+                //Asignando valor a las bandas
+                //Peticion de la clase 
+                limpiarIngresarValor();
+            }else if(validacionDeValor == 0){
+                var ban1class = document.getElementsByClassName("a2");
+                var ban2class = document.getElementsByClassName("a5");
+                var ban3class = document.getElementsByClassName("a7");
+                var multipliclass = document.getElementsByClassName("a9");
+            }
 
             //Cambiando primera banda
             //Cambiando colores a banda 1    
@@ -1604,6 +1616,10 @@ function mostrarResultado(){
     var opcion = document.ingresarValor.nbandas.value;
 
     switch(multi){
+        case "-1":{
+            multiplicador = " Ω ";
+        }break;
+
         case "o":{
             multiplicador = " Ω ";
         }
@@ -1623,7 +1639,7 @@ function mostrarResultado(){
             multiplicador = " GΩ ";
         }
         default:{
-            multiplicador = " Ω ";
+
         }break;
     }
 
