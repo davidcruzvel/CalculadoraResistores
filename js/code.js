@@ -405,8 +405,6 @@ function valorBandas() {
             if (opcion == "3bandas" || opcion == "4bandas") { //El resistor es de 3 o 4 bandas
                 //Caso que el usuario ingrese un solo numero
                 if (contador == 1) {
-                    var ban1class = document.getElementsByClassName("a2");
-
                     bnd1 = "0";
                     bnd2 = valorReal;
     
@@ -856,11 +854,8 @@ function valorBandas() {
             } else if (opcion == "5bandas") { //El resistor es de 5 bandas
                 //Caso que el usuario ingrese un solo numero
                 if (contador == 1) {
-                    var ban1class = document.getElementsByClassName("a2");
-                    var ban2class = document.getElementsByClassName("a5");
-
                     bnd1 = "0";
-					bnd2 = "0";
+		    bnd2 = "0";
                     bnd3 = valorReal;
     
                     //Evaluando las unidades escogidas
