@@ -395,7 +395,7 @@ function valorBandas() {
         alert("ERROR: No se ha ingresado ningún valor.");
         document.ingresarValor.caja_resultado.value = "";
     }else{
-        if (caja.match(/^([0.0-99999999999.0])*$/)){
+        if (caja.match(/^([0.0-99999999999.0])*$/)){        
             valorReal = caja;
     
             caja = caja + espacio;
@@ -405,10 +405,12 @@ function valorBandas() {
             if (opcion == "3bandas" || opcion == "4bandas") { //El resistor es de 3 o 4 bandas
                 //Caso que el usuario ingrese un solo numero
                 if (contador == 1) {
-                    bnd1 = 0;
+                    var ban1class = document.getElementsByClassName("a2");
+
+                    bnd1 = "0";
                     bnd2 = valorReal;
     
-                    //Evaluando las unidades escogidas
+                    //Evaluando las unidades escogidas para multiplicador
                     switch (selectMult) {
                         case "-1": {
                             alert("IMPORTANTE: \nSino selecciona una unidad a calcular, se mostrará\nel resultado por defecto en Ohmios (Ω)");
@@ -854,8 +856,11 @@ function valorBandas() {
             } else if (opcion == "5bandas") { //El resistor es de 5 bandas
                 //Caso que el usuario ingrese un solo numero
                 if (contador == 1) {
-                    bnd1 = 0;
-                    bnd2 = 0;
+                    var ban1class = document.getElementsByClassName("a2");
+                    var ban2class = document.getElementsByClassName("a5");
+
+                    bnd1 = "0";
+					bnd2 = "0";
                     bnd3 = valorReal;
     
                     //Evaluando las unidades escogidas
@@ -949,16 +954,18 @@ function valorBandas() {
     
                         //Caso que no lleve decimales
                     } else {
-                        //En caso que el usuario ponga solo 2 valores
+                        //caso que el usuario ponga solo 2 valores
                         if (contador == 2) {
                             //Estableciendo primer numero
-                            bnd1 = 0;
+                            bnd1 = "0";
     
                             //Obteniendo segundo numero
                             bnd2 = valorReal.substring(0, 1);
     
                             //Obteniendo tercer numero
                             bnd3 = valorReal.substring(1, 2);
+
+                        //caso que el usuario ponga los 3 valores    
                         } else {
                             //Obteniendo primer numero
                             bnd1 = valorReal.substring(0, 1);
@@ -993,7 +1000,7 @@ function valorBandas() {
                             default:
                                 break;
                         }//fin switch
-    
+
                         //Obteniendo el valor real
                         valorReal = valorReal * mult;
     
@@ -1010,13 +1017,18 @@ function valorBandas() {
                             var auxReal = valorString.substring(0, contador);
                             valorString = auxReal;
                         }
-    
+
                         //Reiniciar contador                
                         var auxi = valorReal + espacio;
                         contador = auxi.indexOf(" ");
     
                         //Obteniendo los numeros restantes
-                        var aux = valorString.substring(3, contador);  //Cortar los ultimos numeros         
+                        if(bnd1 == "0"){
+							var aux = valorString.substring(2, contador);  //Cortar los 2 primeros y toma los restantes                   	
+                        }else{
+	                        var aux = valorString.substring(3, contador);  //Cortar los 3 primeros y toma los restantes
+                    	}
+
                         aux = aux + espacio;
                         mult = aux.indexOf(" "); //Contar los ultimos numeros
     
@@ -1086,13 +1098,13 @@ function valorBandas() {
                 //Cambiando colores a banda 1    
                 switch (bnd1) {
     
-                    case -1: {
+                    case "-1": {
                         for (var i = 0; i < ban1class.length; i++) {
                             ban1class[i].style.backgroundColor = "#e1c699"; //beige
                         }
                     } break;
     
-                    case 0: {
+                    case "0": {
                         for (var i = 0; i < ban1class.length; i++) {
                             ban1class[i].style.backgroundColor = "black"; //negro
                         }
